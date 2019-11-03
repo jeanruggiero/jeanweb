@@ -1,5 +1,5 @@
 # jeanweb
-This repository houses the files for my [personal portfolio website](jeanmruggiero.com).
+This repository houses the files for my [personal portfolio website](www.jeanmruggiero.com).
 
 ## Design Process
 Design of this site started with a series of hand sketches to develop concepts and prototype design elements. Next, a site map was created to ensure logical organization of the information on the site. Wireframes were then generated to determine the layout and high level content of each page.
