@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Download Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Download-Button" transform="translate(-15.000000, -12.000000)" fill="#FFFFFF">
+            <g id="Group">
+                <g id="Download-Icon" transform="translate(15.000000, 12.000000)">
+                    <g id="Group-2">
+                        <rect id="Rectangle" x="5.88235294" y="0" width="7.64705882" height="10.5882353"></rect>
+                        <polygon id="Rectangle-Copy-3" points="2.35294118 7.64705882 17.0588235 7.64705882 9.70588235 15.3723426"></polygon>
+                        <rect id="Rectangle" x="0" y="17.6470588" width="20" height="1.76470588" rx="0.588235294"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

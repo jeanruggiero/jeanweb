@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,700&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #333333;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(18,auto);
+    grid-column-gap: 2%;
+    padding-bottom: 163px;
+}
+
+header {
+    grid-column: 2/12;
+    grid-row: 1;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #5D397B;
+    display: inline;
+}
+
+h2.header-sub {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+div.header-large {
+    display: inline-block;
+    height: 57px;
+    margin-right: 2px;
+}
+
+div.header-small {
+    display: inline-block;
+    height: 57px;
+    vertical-align: baseline;
+}
+
+div#header-rule {
+    display: table-cell;
+    width: auto;
+    border-bottom: 1px solid #333333;
+    background-color: aqua;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+nav li {
+    display: inline;
+    text-align: right;
+    padding: 10px;
+}
+
+nav a {
+    font-size: 20px;
+    letter-spacing: 0.77px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333333;
+}
+
+nav a:hover {
+    color: #5D397B;
+    font-weight: 700;
+}
+
+p#about {
+    font-size: 16px;
+    margin-top: 37px;
+    max-width: 810px;
+    grid-column: 2/11;
+    grid-row: 2;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 93px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    margin-top:20px;
+}
+
+div#contact-info {
+    margin-bottom: 37px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+footer a {
+    /*background-repeat: no-repeat;*/
+    text-decoration: none;
+    display: inline-block;
+    margin: auto 25px; auto 25px;
+}
+
+a#linkedin, a#linkedin img {
+    height: 37.4px;
+    width: 38.5px;
+}
+
+a#github, a#github img {
+    height: 37.4px;
+    width: 38.35px;
+}
+
+a#email, a#email img {
+    height: 37.4px;
+    width: 37.4px;
+}
+
+.resume-header {
+    font-size: 24px;
+    font-weight: 500;
+    grid-column: 2/12;
+}
+
+div.resume-item {
+    grid-column: 5/12;
+    margin-bottom: 17px;
+}
+
+.job-title {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+    display: inline-block;
+    text-align: right;
+    grid-column: 2/5;
+}
+
+.resume-company {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.grad-date, .location, .date {
+    font-style: italic;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+.grad-date::before {
+    content: url("/static/icons/grad_icon.svg");
+    padding-right: 5px;
+    vertical-align: inherit;
+}
+
+.grad-date {
+    vertical-align: middle;
+}
+
+.location::before {
+    content: url("/static/icons/location_icon.svg");
+    padding-right: 5px;
+    vertical-align: inherit;
+}
+
+.location {
+    width: 210px;
+    vertical-align: middle;
+}
+
+.date::before {
+    content: url("/static/icons/calendar_icon.svg");
+    padding-right: 5px;
+    vertical-align: inherit;
+}
+
+.date {
+    vertical-align: middle;
+}
+
+#skill-category1 {
+    grid-column: 3/6;
+}
+
+#skill-category2 {
+    grid-column: 6/9;
+}
+
+#skill-category3 {
+    grid-column: 9/12;
+}
+
+div.skill-category {
+    display: inline-block;
+}
+
+p.resume, p.award {
+    margin: 0;
+}
+
+.skill-2::before {
+    content: url("/static/icons/2star.svg");
+    padding-right: 5px;
+    vertical-align: inherit;
+}
+
+.skill-3::before {
+    content: url("/static/icons/3star.svg");
+    padding-right: 5px;
+    vertical-align: inherit;
+}
+
+.skill-4::before {
+    content: url("/static/icons/4star.svg");
+    padding-right: 5px;
+    vertical-align: inherit;
+}
+.skill-5::before {
+    content: url("/static/icons/5star.svg");
+    padding-right: 5px;
+    vertical-align: inherit;
+}
+
+.skill-2, .skill-3, .skill-4, .skill-5 {
+    margin: 7px 0 7px 0;
+    vertical-align: middle;
+}
+
+.skill-header {
+    margin-top: 0;
+}
+
+#download-bar {
+    grid-column: 2/12;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#download-button {
+    height: 44px;
+    width: 210px;
+    background: #305394;
+    border-radius: 3px;
+    padding: 10px 15px 10px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.5);
+}
+
+#download-button:hover, #download-button:active {
+    background: #2C436E;
+}
+
+#download-button:active {
+    box-shadow: none;
+}
+
+#download-button img {
+    vertical-align: middle;
+    padding-right: 7px;
+}
+
+
+
+
+

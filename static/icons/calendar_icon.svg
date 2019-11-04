@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="21px" viewBox="0 0 25 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Calendar Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Date" fill="#5D397B">
+            <g id="Calendar-Icon">
+                <path d="M25,16.5 C25,18.9852814 22.9852814,21 20.5,21 L4.5,21 C2.01471863,21 3.04359188e-16,18.9852814 0,16.5 L0,4.5 C-3.04359188e-16,2.01471863 2.01471863,4.56538782e-16 4.5,0 L20.5,0 C22.9852814,4.31639638e-16 25,2.01471863 25,4.5 L25,16.5 Z M22.916,5.25 L2.083,5.25 L2.08333333,16.275 C2.08333333,17.668988 3.16992036,18.8091899 4.5423242,18.8948356 L4.70833333,18.9 L20.2916667,18.9 C21.6856546,18.9 22.8258566,17.813413 22.9115023,16.4410091 L22.9166667,16.275 L22.916,5.25 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
