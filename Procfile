@@ -1,1 +1,1 @@
-web: gunicorn jean_site.wsgi
+web: gunicorn jeanweb.wsgi
