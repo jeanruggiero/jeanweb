@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,700&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    color: #333333;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 2%;
+}
+
+header {
+    grid-column: 2/12;
+    grid-row: 1;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #5D397B;
+    display: inline;
+}
+
+h2.header-sub {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+div.header-large {
+    display: inline-block;
+    height: 57px;
+    margin-right: 2px;
+}
+
+div.header-small {
+    display: inline-block;
+    height: 57px;
+    vertical-align: baseline;
+}
+
+div#header-rule {
+    display: table-cell;
+    width: auto;
+    border-bottom: 1px solid #333333;
+    background-color: aqua;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+nav li {
+    display: inline;
+    text-align: right;
+    padding: 10px;
+}
+
+nav a {
+    font-size: 20px;
+    letter-spacing: 0.77px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333333;
+}
+
+nav a:hover {
+    color: #5D397B;
+    font-weight: 700;
+}
+
+p#about {
+    font-size: 16px;
+    margin-top: 37px;
+    max-width: 810px;
+    grid-column: 2/11;
+    grid-row: 2;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 84px;
+}
+
+div#contact-info {
+    margin-bottom: 37px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+footer a {
+    /*background-repeat: no-repeat;*/
+    text-decoration: none;
+    display: inline-block;
+    margin: auto 25px; auto 25px;
+}
+
+a#linkedin, a#linkedin img {
+    height: 37.4px;
+    width: 38.5px;
+}
+
+a#github, a#github img {
+    height: 37.4px;
+    width: 38.35px;
+}
+
+a#email, a#email img {
+    height: 37.4px;
+    width: 37.4px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+    <meta charset="UTF-8">
+    <meta name="description"
+            content="Jean Ruggiero's portfolio site." />
+    <meta http-equiv="author"
+        content="Jean Ruggiero">
+    <meta http-equiv="pragma"
+            content="no-cache">
+    <title>{% block title %}Jean Ruggiero, Rocket Scientist{% endblock %}</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <nav>
+                <ul id="nav-options">
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="resume">RESUME</a></li>
+                    <!--<li><a>PORTFOLIO</a></li>-->
+                    <!--<li><a>CONTACT</a></li>-->
+                </ul>
+            </nav>
+            <div class="header-text">
+                <div class="header-large">
+                    <h1>{% block header-large %}{% endblock %}</h1>
+                </div>
+                <div class="header-small">
+                    <h2 class="header-sub">{% block header_small %}
+                        {% endblock %}</h2>
+                </div>
+                <div id="header-rule"></div>
+            </div>
+        </header>
+
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    <footer>
+        <div id="contact-info">
+            <a id="linkedin" href="https://www.linkedin.com/in/jean-ruggiero/">
+                <img src="{% static "icons/linkedin_icon.svg" %}" alt="LinkedIn logo">
+            </a>
+            <a id="github" href="https://github.com/jeanruggiero">
+                <img src="{% static "icons/github_icon.svg" %}" alt="GitHub logo">
+            </a>
+            <a id="email" href="mailto:ruggiero.je@husky.neu.edu">
+                <img src="{% static "icons/email_icon.svg" %}" alt="Email icon">
+            </a>
+        </div>
+
+       <p>Site created & designed by Jean Ruggiero &ndash; 2019</p>
+    </footer>
+
+</body>
+</html>
