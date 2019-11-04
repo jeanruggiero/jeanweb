@@ -1,5 +1,6 @@
 import os
 from .settings import *
+import django_heroku
 
 DEBUG = False
 TEMPLATE_DEBUG = False
@@ -13,3 +14,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = os.path.join(BASE_DIR, 'static/')
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'jean_site/static')]
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
