@@ -1,13 +1,143 @@
 {% extends "jean_site/base.html" %}
 
-{% block header-large %}
-simple is better than complex
-{% endblock header-large %}
+{%  block title %}Jean Ruggiero - Resume{% endblock %}
 
-{% block header_small %}
-The Zen of Python
-{% endblock header_small %}
+{% block header-large %}simple is better than complex{% endblock %}
+
+{% block header_small %}The Zen of Python{% endblock %}
 
 {% block content %}
+    {% load static %}
+    <h2 class="resume-header">Education</h2>
+
+    <h3 class="job-title">M.S. Computer Science</h3>
+    <div class="resume-item">
+        <h3 class="resume-company">Northeastern University</h3>
+        <p class="grad-date">2021</p>
+    </div>
+
+
+    <h3 class="job-title">Certificate in Python Programming</h3>
+    <div class="resume-item">
+        <h3 class="resume-company">University of Washington</h3>
+        <p class="resume">Python, web development, algorithms, data structures,
+            statistics</p>
+        <p class="grad-date">2019</p>
+    </div>
+
+
+    <h3 class="job-title">B.S. Aeronautical & Astronautical Engineering</h3>
+    <div class="resume-item">
+        <h3 class="resume-company">Purdue University</h3>
+        <p class="resume">Jet propulsion, fluid dynamics, flight test</p>
+        <p class="grad-date">2014</p>
+    </div>
+
+    <h2 class="resume-header">Professional Experience</h2>
+
+
+    <h3 class="job-title">Product Manager</h3>
+    <div class="resume-item">
+        <h3 class="resume-company">Boeing</h3>
+        <p class="resume">As a product manager working on internal software
+            tools, I
+            paired with developers to implement flight test calculations in the form of Python scripts. I performed user research to identify and prioritize web application usability issues and patricipated in UI prototyping.</p>
+        <p class="location">Seattle, WA</p>
+        <p class="date">Oct 2018 &ndash; Aug 2019</p>
+    </div>
+
+    <h3 class="job-title">Flight Test Engineer</h3>
+    <div class="resume-item">
+        <h3 class="resume-company">Boeing</h3>
+        <p class="resume">During my time in flight test, I got to plan and fly
+            on
+            flight tests including negative&#8209;G testing and aerial refueling missions. I developed MATLAB applications for real&#8209;time data monitoring during tests and analyzed test data to develop insights and formulate recommendations for internal customers. I was also involved in mentoring new employees and made regular contributions to internal technical publications.</p>
+        <p class="location">Seattle, WA</p>
+        <p class="date">June 2014 &ndash; Oct 2018</p>
+    </div>
+
+    <h3 class="job-title">Engineering Co&#8209;Op</h3>
+    <div class="resume-item">
+        <h3 class="resume-company">Rolls-Royce</h3>
+        <p class="resume">I worked at Rolls-Royce for three semesters as an
+            undergraduate. I worked in Future Programmes developing
+            performance models for new and novel gas turbine engine cycles, spent time as a manufacturing engineer on the F&#8209;35 LiftFan, and performed engine cooling optimizations in Fluid Systems.</p>
+        <p class="location">Indianapolis, IN</p>
+        <p class="date">2012 &ndash; 2013</p>
+    </div>
+
+    <h2 class="resume-header">Skills</h2>
+
+    <div id="skill-category1" class="skill-category">
+        <h3 class="skill-header">Software Development</h3>
+        <p class="skill-5">Python</p>
+        <p class="skill-3">Django</p>
+        <p class="skill-3">pandas</p>
+        <p class="skill-4">Jupyter&nbsp;Notebook</p>
+        <p class="skill-2">C++</p>
+        <p class="skill-2">JavaScript</p>
+        <p class="skill-4">HTML</p>
+        <p class="skill-3">CSS</p>
+        <p class="skill-5">MATLAB</p>
+        <p class="skill-3">Git</p>
+    </div>
+
+    <div id="skill-category2" class="skill-category">
+        <h3 class="skill-header">Product & Design</h3>
+        <p class="skill-4">Jira</p>
+        <p class="skill-3">Sketch</p>
+        <p class="skill-3">InVision</p>
+        <p class="skill-5">LaTeX</p>
+    </div>
+
+    <div id="skill-category3" class="skill-category">
+        <h3 class="skill-header">Operating Systems</h3>
+        <p class="skill-4">MacOS</p>
+        <p class="skill-3">Red&nbsp;Hat&nbsp;Linux</p>
+        <p class="skill-3">Unix</p>
+        <p class="skill-5">Windows</p>
+    </div>
+
+    <h2 class="resume-header">Volunteer Experience</h2>
+
+    <h3 class="job-title">Head Instructor, Basic&nbsp;Rock&nbsp;Class</h3>
+    <div class="resume-item">
+        <h3 class="resume-company">Boeing Employees Alpine Society</h3>
+        <p class="resume">Outside of work, I volunteer as a climbing instructor.
+            As
+            Head Instructor, I worked closely with students and instructors to improve their climbing and safety skills. I executed a promotional campaign that increased the number of applicants by 50% over the previous two years. I also automated processing of student application data using Python and Jupyter Notebook to generate interactive summary reports for admissions committee members.</p>
+        <p class="date">Sept 2017 &ndash; Sept 2019</p>
+    </div>
+
+    <h2 class="resume-header">Awards & Honors</h2>
+
+    <h3 class="job-title">John Cashman Award</h3>
+    <div class="resume-item">
+        <p class="award">The Cashman Award recognizes one individual or group
+            per year
+            that has made an enduring contribution to the advancement of flight test safety.</p>
+        <p class="date">2015</p>
+    </div>
+
+    <h3 class="job-title">ASME IAM3D Challenge Best&nbsp;Overall</h3>
+    <div class="resume-item">
+        <p class="award">The IAM3D Challenge recognizes undergraduate students from around
+            the world who re-engineer existing products or create new designs that minimize energy consumption or improve energy efficiency.</p>
+        <p class="date">2014</p>
+    </div>
+
+    <h3 class="job-title">Purdue University Trustees Scholarship</h3>
+    <div class="resume-item">
+        <p class="award">The Trustees Scholarship is awarded to individuals who
+            demonstrate exceptional academic achievement, leadership, and service in their school and community.</p>
+        <p class="date">2010 &ndash; 2014</p>
+    </div>
+
+    <div id="download-bar">
+        <a id="download-button" href="{% static 'jean_ruggiero_resume.pdf' %}"
+        download><img
+                src="{% static 'icons/download_icon.svg' %}" alt="Download
+                icon">DOWNLOAD</a>
+    </div>
 
 {%  endblock content %}
