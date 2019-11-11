@@ -114,7 +114,7 @@ footer p {
     margin: 0;
 }
 
-footer a {
+div#contact-info a {
     /*background-repeat: no-repeat;*/
     text-decoration: none;
     display: inline-block;
@@ -122,18 +122,18 @@ footer a {
 }
 
 a#linkedin, a#linkedin img {
-    height: 37.4px;
-    width: 38.5px;
+    height: 38.4px;
+    width: 39.5px;
 }
 
 a#github, a#github img {
-    height: 37.4px;
-    width: 38.35px;
+    height: 38.4px;
+    width: 39.35px;
 }
 
 a#email, a#email img {
-    height: 37.4px;
-    width: 37.4px;
+    height: 38.4px;
+    width: 38.4px;
 }
 
 .resume-header {
