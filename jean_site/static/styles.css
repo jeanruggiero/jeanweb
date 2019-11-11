@@ -144,6 +144,12 @@ a#email, a#email img {
     width: 38.4px;
 }
 
+p a {
+    color: #305394;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 .resume-header {
     font-size: 24px;
     font-weight: 500;
