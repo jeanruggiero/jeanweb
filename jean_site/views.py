@@ -18,3 +18,7 @@ def portfolio(request):
 
 def tetracraft(request):
     return render(request, 'jean_site/portfolio/tetracraft.html')
+
+
+def personal_site(request):
+    return render(request, 'jean_site/portfolio/personal_site.html')
