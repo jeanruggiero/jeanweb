@@ -10,3 +10,11 @@ def home(request):
 
 def resume(request):
     return render(request, 'jean_site/resume.html')
+
+
+def portfolio(request):
+    return render(request, 'jean_site/portfolio.html')
+
+
+def tetracraft(request):
+    return render(request, 'jean_site/portfolio/tetracraft.html')

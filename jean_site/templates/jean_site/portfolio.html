@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Jean Ruggiero: Portfolio</title>
-    </head>
-    <body>
-        <a class="filter-link">PROJECTS</a>
-        <a class="filter-link">ART</a>
-        <a class="filter-link">MOUNTAINS</a>
+{% extends "jean_site/base_sub_page.html" %}
 
-        <a class="projects" href="https://engineering.purdue.edu/AAE/news/2014/20141208SpotlightAAETeamWinsBestOverallinIAM3DChallenge"></a>
-        <!--BRC site, BRC app data, watercolors, trail runs-->
-    </body>
-</html>
+{%  block title %}Jean Ruggiero - Portfolio{% endblock %}
+
+{% block header-large %}portfolio{% endblock %}
+
+{% block header_small %}selected software, engineering, and design projects{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<a id="tetracraft-cover" class="project" href="portfolio/tetracraft">
+    <img
+        src="
+{% static "images/tetracraft_cover.svg" %}"
+        alt="Tetracraft: a 3D Printed Agricultural Imaging Aircraft (The world’s largest 3D printed aircraft!)">
+</a>
+
+
+
+
+{% endblock content %}
