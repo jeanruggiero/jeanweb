@@ -17,9 +17,15 @@ div.grid-container {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(18,auto);
     grid-column-gap: 2%;
-    padding-bottom: 163px;
+    padding-bottom: 273px;
 }
 
+div.grid-container div {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/**************HEADER***********************/
 header {
     grid-column: 2/12;
     grid-row: 1;
@@ -44,26 +50,59 @@ h6#header-slash {
 h2.header-sub {
     font-size: 12px;
     font-weight: normal;
+    color: #333333;
+    margin: 0;
 }
 
 div.header-large {
-    display: inline-block;
     height: 57px;
     margin-right: 2px;
 }
 
 div.header-small {
-    display: inline-block;
-    height: 57px;
     vertical-align: baseline;
 }
 
-div#header-rule {
-    display: table-cell;
-    width: auto;
-    border-bottom: 1px solid #333333;
-    background-color: aqua;
+/************************FOOTER********************/
+footer {
+    text-align: center;
+    width: 100%;
+    height: 93px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    margin-top:130px;
 }
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+footer div#contact-info {
+    margin-bottom: 15px;
+}
+
+footer div#contact-info a {
+    text-decoration: none;
+    display: inline-block;
+    margin: auto 25px; auto 25px;
+}
+
+a#linkedin, a#linkedin img {
+    height: 38.4px;
+    width: 39.5px;
+}
+
+a#github, a#github img {
+    height: 38.4px;
+    width: 39.35px;
+}
+
+a#email, a#email img {
+    height: 38.4px;
+    width: 38.4px;
+}
+
 
 nav ul {
     list-style: none;
@@ -91,57 +130,12 @@ nav a:hover {
     font-weight: 700;
 }
 
+
 div#about {
     margin-top: 37px;
     max-width: 810px;
     grid-column: 2/11;
     grid-row: 2;
-}
-
-div#about p {
-    font-size: 16px;
-
-}
-
-footer {
-    text-align: center;
-    width: 100%;
-    height: 93px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 50px;
-    margin-top:20px;
-}
-
-div#contact-info {
-    margin-bottom: 37px;
-}
-
-footer p {
-    font-size: 12px;
-    margin: 0;
-}
-
-div#contact-info a {
-    /*background-repeat: no-repeat;*/
-    text-decoration: none;
-    display: inline-block;
-    margin: auto 25px; auto 25px;
-}
-
-a#linkedin, a#linkedin img {
-    height: 38.4px;
-    width: 39.5px;
-}
-
-a#github, a#github img {
-    height: 38.4px;
-    width: 39.35px;
-}
-
-a#email, a#email img {
-    height: 38.4px;
-    width: 38.4px;
 }
 
 p a {
@@ -150,6 +144,7 @@ p a {
     font-weight: 500;
 }
 
+/***************************RESUME STYLES*************************/
 .resume-header {
     font-size: 24px;
     font-weight: 500;
@@ -301,6 +296,7 @@ p.resume, p.award {
     padding-right: 7px;
 }
 
+/**************************PORTFOLIO STYLES**************************/
 a.project img {
     display: block;
     object-fit: cover;
@@ -320,6 +316,112 @@ a.project:active img {
 a#tetracraft-cover, a#tetracraft-cover img {
     grid-column: 4/9;
 }
+
+/*********************PROJECT PAGE STYLES**************************/
+h2,h3 {
+    display: block;
+    grid-column: 2/12;
+    font-weight: 500;
+}
+
+h2 {
+    color: #5D397B;
+    font-size: 21px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #333333;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+p, ul {
+    grid-column: 2/12;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+p.caption {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    width: inherit;
+}
+.c2-12 {
+    grid-column: 2/12;
+}
+
+.c2-9 {
+    grid-column: 2/9;
+}
+
+.c9-12 {
+    grid-column: 9/12;
+}
+
+.c8-12 {
+    grid-column: 8/12;
+}
+.c2-8 {
+    grid-column: 2/8;
+}
+
+.c2-6 {
+    grid-column: 2/6;
+}
+
+.c6-12 {
+    grid-column: 6/12;
+}
+
+.c2-7 {
+    grid-column: 2/7;
+}
+
+.c7-12 {
+    grid-column: 7/12;
+}
+
+.c2-5 {
+    grid-column: 2/5;
+}
+
+.c5-12 {
+    grid-column: 5/12;
+}
+
+
+
+
+div img {
+    object-fit: cover;
+    width: 100%;
+
+}
+
+div#meet-team div {
+
+    vertical-align: top;
+    text-align: center;
+
+}
+
+div#meet-team img {
+    max-height: 100px;
+    object-fit: contain;
+}
+
+div#meet-team p.caption {
+    max-width: 100px;
+
+    margin: auto;
+}
+
+
 
 
 

@@ -1,7 +1,211 @@
 {% extends "jean_site/portfolio/base_portfolio.html" %}
+{% block title %}Jean Ruggiero: Tetracraft{% endblock %}
+{% block header-large %}Tetracraft{% endblock %}
+{% block header_small %}a 3D printed agricultural imaging aircraft{% endblock %}
 
 {% block content %}
+{% load static %}
 
-Portfolio stuff
+<div class="img c2-12">
+    <img class="c2-12" src="{% static "images/tetracraft_overview.svg" %}"
+     alt="Side-by-side images of finished Tetracraft and 4-view CAD drawing">
+</div>
+<p>For my senior design project, I led a team in the development and
+    manufacture of an unmanned aircraft for agricultural imaging applications
+    . The goal was to design and build an unmanned aircraft that could be
+    launched in the field and used to capture aerial images of crops that
+    could be later analyzed to glean data about crop health. 3D printing was
+    selected as the means of manufacture because it enables rapid
+    fabrication, little assembly time, and fast generation of replacement
+    parts. At the time of completion, it was believed to be the world’s
+    largest 3D printed aircraft! The design was selected as the Best Overall
+    in the <a href="https://www.asme.org/topics-resources/society-news/asme-news/students-vie-top-prizes-iam3d-old-guard-student">
+        2014 ASME IAM3D Challenge</a>.</p>
+
+<p>Below is a brief overview of the project. See the <a href="
+{% static "tetracraft_final_design_report.pdf" %}" download>
+    final design report</a> for a more thorough description of the design process
+    including trade studies, analyses completed, and test results. At the
+    end of the project, a short demonstration flight was flown as a proof
+    of concept. Check out
+    a video of the Tetracraft in flight <a href="https://www.youtube.com/watch?v=rhjf-HuC13g&_ga=2.44470244.1162963421.1573439234-593674200.1572136660">
+        here</a>.</p>
+
+<h2>The Problem</h2>
+<p>Without easily accessible data about crop health, farmers have little choice but to equally distribute resources (water, fertilizer, pesticides) across their planted land. If farmers had real-time data on the health of their crop, they could make informed decisions about how to allocate resources. The result is higher yields, reduced waste, and lower operating costs.</p>
+
+<h2>Meet The Team</h2>
+<div id="meet-team" class="img c2-12">
+    <div>
+        <img src="{% static "images/jean_ruggiero.svg" %}" alt="Jean Ruggiero">
+        <p class="caption">Jean Ruggiero</p>
+    </div>
+    <div>
+        <img src="{% static "images/nicolaus_caniza.svg" %}"
+             alt="Nicolaus Caniza">
+        <p class="caption">Nicolaus Caniza</p>
+    </div>
+    <div>
+        <img src="{% static "images/stephen_lutgring.svg" %}"
+             alt="Stephen Lutgring">
+        <p class="caption">Stephen Lutgring</p>
+    </div>
+    <div>
+        <img src="{% static "images/michael_kelley.svg" %}"
+             alt="Michael Kelley">
+        <p class="caption">Michael Kelley</p>
+    </div>
+    <div>
+        <img src="{% static "images/aaron_inouye.svg" %}"
+             alt="Aaron Inouye">
+        <p class="caption">Aaron Inouye</p>
+    </div>
+    <div>
+        <img src="{% static "images/tanveer_chandok.svg" %}"
+             alt="Tanveer Chandok">
+        <p class="caption">Tanveer Chandok</p>
+    </div>
+    <div>
+        <img src="{% static "images/michael_miles.svg" %}"
+             alt="Michael Miles">
+        <p class="caption">Michael Miles</p>
+    </div>
+    <div>
+        <img src="{% static "images/ignacio_cruz.svg" %}"
+             alt="Ignacio Jose Benitez Cruz">
+        <p class="caption">Ignacio Jose Benitez Cruz</p>
+    </div>
+    <div>
+        <img src="{% static "images/scott_ashcraft.svg" %}"
+             alt="Scott Ashcraft">
+        <p class="caption">Scott Ashcraft</p>
+    </div>
+    <div>
+        <img src="{% static "images/roman_hofer.svg" %}"
+             alt="Roman Esteban Hofer">
+        <p class="caption">Roman Esteban Hofer</p>
+    </div>
+</div>
+
+<h2>Design Requirements</h2>
+<p>The goal of the project was to design an unmanned aircraft that would allow farmers to capture aerial crop health data. The following requirements informed the design. The design needed to be:</p>
+<ul>
+    <li>transportable in a standard size pickup truck.</li>
+    <li>flyable by someone without extensive training.</li>
+    <li>launchable and recoverable without use of an established airstrip.</li>
+    <li>able to image 60 acres of crops in a single mission.</li>
+</ul>
+
+<h2>Design Process</h2>
+<p>The design of the Tetracraft followed a standard iterative aircraft design process. An outer mold line, the shape of the exterior surface of the aircraft, was selected based on principles of  aerodynamics and the given design requirements. A blended wing body arrangement was selected based on the size constraints. </p>
+
+<h3>Aerodynamics, Stability, and Control</h3>
+<p class="c2-9">A computer-based model of the aircraft was developed and
+    preliminary
+    aerodynamic and stability analyses were performed using XFLR5 and AVL. A preliminary payload including the imaging sensor and avionics was selected. A weight estimate was developed based on estimated weights of the aircraft structure, payload, propulsion system, and battery pack. Several iterations were completed by modifying the parameters of the design until the outer mold line supported the estimated weight of the aircraft. In later iterations, Computational Fluid Dynamics (CFD) software was used to perform more sophisticated analyses. A rough prototype glider was made out of foam and fiberglass tape and flight tested to validate the general aerodynamic arrangement: body shape, airfoil sections, and wing sweep.</p>
+<div class="img c9-12">
+    <img src="{% static "images/analysis_data.svg" %}" alt="Plotted data
+    generated from aerodynamic analysis">
+    <p class="caption">Preliminary analyses were used to optimize the design by maximizing lift and minimizing drag.</p>
+</div>
+
+
+<p>Based on the results of these initial analyses, control surfaces
+    were
+    sized and added to the models. Elevons, control surfaces that combine the function of elevators and ailerons, were selected as they allow for the best controllability for blended wing body style aircraft. Further design iterations were completed to refine sizing of the control surfaces so that the surfaces afforded sufficient control authority throughout the entire flight envelope. A roughly 2/3 scale model of the Tetracraft was fabricated using foam and fiberclass for final validation of the outer mold line and control surfaces. The model was outfitted with an electric motor and propeller, servos to actuate control surfaces, and an ArduPilot to allow for remote control. The results of wind tunnel and flight tests were used to validate the models generated at the onset of the design process.</p>
+<div class="img c2-7">
+    <img src="{% static "images/wind_tunnel_test.svg" %}"
+    alt="Tetracraft
+    model
+    mounted in large wind tunnel">
+    <p class="caption">Wind tunnel test of 2/3 scale model at Purdue University Airport.</p>
+</div>
+<div class="img c7-12">
+    <img src="{% static "images/test_data.svg" %}"
+         alt="Plotted data from wind
+    tunnel tests">
+    <p class="caption">Wind tunnel test data indicate that aerodynamic models under-predict drag.</p>
+</div>
+
+<h3>Propulsion</h3>
+<p>As weight estimates were becoming more accurate, sizing for the propulsion system was finalized. An electric motor and propellor were selected based on the estimated final weight of the aircraft and its payload. Propulsion testing was performed in a wind tunnel, using a force table to measure thrust generated at varying flight conditions. Computations were done to determine how much power would be needed to complete the mission and a battery pack was selected.</p>
+
+<h3>Sensors & Avionics</h3>
+<p class="c2-8">In parallel, work on the imaging sensor continued. The chosen
+    sensor was the Tetracam, a sensor that captures images in multiple
+    wavelengths so that the data can be combined to create a
+    <a href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">
+        Normalized Difference Vegetation Index</a> (NDVI) map of the surveyed
+    area. NDVI images indicate the health of plants using color coding to
+    highlight areas of good and poor plant health. Image stitching software
+    was configured to stitch together individual images to create one image
+    of the entire surveyed area.</p>
+
+<div class="img c8-12">
+    <img src="{% static "images/ndvi_comparison.svg" %}" alt="Side-by-side
+     visual and NDVI aerial images of same farmland.">
+    <p class="caption">Visual and NDVI images of the same area.</p>
+</div>
+
+<div class="img c2-6">
+    <img src="{% static "images/avionics.svg" %}" alt="Schematic of avionics
+    components and wiring">
+</div>
+<p class="c6-12">An avionics scheme was developed to support the selected outer mold line and control surfaces. An ArduPilot, an Arduino-based autopilot system, was selected as it allowed the mission to be programmed so that the Tetracraft would be accessible to a novice user. Servos were selected for control surface actuation based on the predicted surface loads. Control laws were developed to map control inputs to surface deflections throughout the flight envelope. A wiring diagram was created for use during assembly.</p>
+
+<h3>Structural Arrangement</h3>
+<p class="c2-7">Ribs, spars, and other structural elements were selected based
+    on
+    anticipated flight loads and added to the CAD (Computer Aided Design) model of the Tetracraft. 3D printed coupons, small sections of material, were tested in the lab to determine material properties to inform a structural model of the Tetracraft. A Finite Element Model (FEM) of the aircraft was created and computer-based structural analyses were performed. The results were used to iterate on the structural arrangement to ensure an adequate factor of safety over the entire flight envelope.</p>
+<div class="img c7-12">
+    <img src="{% static "images/structural_analysis.gif" %}" alt="Animation
+    of wing structure reacting to aerodynamic load">
+    <p class="caption">Structural analysis predicted approximately 2.5 in maximum wing tip deflection.</p>
+</div>
+
+<div class="img c2-6">
+    <img src="{% static "images/structural_test.svg" %}" alt="Load being
+    applied to wing tip during structural testing.">
+    <p class="caption">Wing bending laboratory test shows skin dimpling at
+        maximum load but no plastic deformation.</p>
+</div>
+
+<p class="c6-12">Based on structural analysis results, a preliminary structural
+    arrangement was determined and two full-scale wings with different skin thicknesses, single ply and double ply, were ordered from the manufacturer for lab testing. Lab tests were performed with all permutations of the two wing designs and three carbon fiber spar configurations (woven, pultruded, none). Wing bending and torsion tests showed no plastic deformation (permanent damage) to either of the wings when a spar was used, but insufficient performance without a carbon fiber spar. As a result, the single ply wing with a pultruded carbon fiber spar, the lightest of the successful combinations, was selected. In addition, test results showed that the structural models developed previously accurately predicted wing deformation at the loads tested and thus could be used to determine loads at other points in the flight envelope.</p>
+
+<h3>Design for Manufacture</h3>
+<p>The Tetracraft pioneered the use of
+    <a href="https://en.wikipedia.org/wiki/Fused_filament_fabrication">
+        Fused Deposition Modeling</a> (FDM) printing in the manufacture of
+       aircraft. Traditional 3D printed parts are designed as solid objects and are then printed at a specified density. According to the solid model and density, the machine develops a tool path for the printer and the end result is a solid object with a honeycomb structure inside. In addition, surfaces could not be printed at single bead thickness using traditional methods. FDM, on the other hand, allows the designer to model the part as a series of surfaces and solids. The FDM machine then creates a tool path based on the surfaces, printing them at single bead thickness.</p>
+<p class="c2-8">The advantage of using FDM in the manufacture of aircraft parts
+    is
+    that the designer has control over the internal structure of the part. The typical structure of an aircraft wing is made up internal ribs and spars, covered with a thin skin. This arrangement affords the highest possible strength to weight ratio under flight loads. The aircraft wings, body, and winglets were designed so that the internal structure was a series of ribs and spars, allowing for lighter structural weight than an internal honeycomb. Additionally, FDM allowed for a much thinner skin, a single bead thickness, than other printing methods. Therefore, the FDM printed parts could be much lighter than equivalent parts created using traditional 3D printing technologies.</p>
+<div class="img c8-12">
+    <img src="{% static "images/cad_finished_part.svg" %}" alt="Side-by-side
+    image of aircraft body CAD drawing and finished part.">
+    <p class="caption">CAD model of body section and finished part in print orientation.</p>
+</div>
+
+<div class="img c2-5">
+    <img src="{% static "images/support_material.svg" %}" alt="Cartoon of
+    overhanging 3D-printed material with support material below.">
+    <p class="caption">Support material (shown in yellow) is used to support overhanging parts during printing.</p>
+</div>
+
+<p class="c5-12">Another consideration in the design process was the elimination
+    of
+    support material. When parts are 3D printed, if any sections overhang by 45° or more, the printer will need to print a wax-like support material below the overhanging section to prevent it from drooping. After the printing process is complete, the support material can be removed by melting or dissolving it. This process is time-consuming and wasteful. Therefore, a part that eliminates the need for support material will be faster and less expensive to manufacture. The entire Tetracraft was designed so that it could be printed entirely without the use of support material.</p>
+
+<h2>Manufacture and Assembly</h2>
+<p class="c2-7">Once the design of the Tetracraft was finalized, the CAD model
+    was
+    sent to Stratasys for printing. The 3D printed parts and carbon fiber spars were assembled according to assembly drawings. The payload was assembled using a simple jig and inserted into the payload compartment. Ease of assembly was another major benefit of 3D printed parts. If a part were to be damaged in the field, a replacement part could be printed and easily installed by the user.</p>
+
+<div class="img c7-12">
+    <img src="{% static "images/assembly.svg" %}" alt="Side-by-side images of
+     assembly CAD drawing and photograph of payload assembly.">
+</div>
+
 
 {% endblock content %}
