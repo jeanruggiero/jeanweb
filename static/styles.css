@@ -317,6 +317,10 @@ a#tetracraft-cover, a#tetracraft-cover img {
     grid-column: 4/9;
 }
 
+a#personal-site-cover, a#personal-site-cover img {
+    grid-column: 9/12;
+}
+
 /*********************PROJECT PAGE STYLES**************************/
 h2,h3 {
     display: block;
