@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700&display=swap');
 
 body {
     font-family: Roboto, sans-serif;
@@ -26,11 +26,19 @@ header {
     margin-top: 15px;
 }
 
-h1 {
+h1, h5#site-name {
     font-size: 48px;
     font-weight: 500;
     color: #5D397B;
     display: inline;
+}
+
+h6#header-slash {
+    display: inline;
+    font-weight: 300;
+    font-size: 48px;
+    letter-spacing: -12px;
+    padding-right: 13px;
 }
 
 h2.header-sub {
