@@ -8,8 +8,13 @@ jean ruggiero
 rocket scientist, software developer, creative thinker
 {% endblock header_small %}
 
+{% load static %}
 {% block content %}
-<div id="about">
+<div id="head-shot" class="about c2-5">
+    <img src="{% static "images/head_shot_circle.svg" %}" alt="Jean
+    Ruggiero's professional head shot.">
+</div>
+<div class="about c5-11">
     <p>Hi, I'm Jean! I’m an aerospace engineer turned product
         manager turned computer science grad student. My interests include
         data science, scientific computation, and product design. I’m seeking
