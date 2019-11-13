@@ -54,7 +54,7 @@ The latest Sketch prototypes can be found on GitHub
 <h2>Usability Testing</h2>
 <p class="c2-7">I performed a short usability test using the clickable InVision prototype. While a single user test is not sufficient to verify a design, the data helped to validate some assumptions. In general, the user realized that CTAs were clickable. The navigation bar tested successfully. Some things didn’t go over so well: the user didn’t notice the download button on the resum page until asked a probing question about it at the end of the interview. There was no way to get from project pages back to the portfolio page. The use of headers related to content on some pages and quotations on other pages was an information hierarchy violation quickly noticed by the user, so headers were modified to be consistent across all pages.</p>
 <div class="c7-12">
-    <img src="{% static "images/user_research_notes.svg" %}" alt="Usability
+    <img src="{% static "images/user_research_notes.jpg" %}" alt="Usability
     testing notes arranged into categories (good, bad, ideas).">
 </div>
 
@@ -64,7 +64,9 @@ The latest Sketch prototypes can be found on GitHub
 <p>I started by creating a GitHub repository for the project, starting a Django project, and committing the empty site. I created a base template with things like the navigation bar, footer, and header layout. Next, I built content templates for the home and resume pages. I created views to serve the site’s pages. With the content layer complete, I created a stylesheet and fine-tuned the layout of design elements on both pages. I tested the site using the Django development server, including verifying that all links worked properly.</p>
 
 <h2>Deployment</h2>
-<p>I chose to deploy the site to Heroku because it’s one of the fastest and easiest ways to deploy a Django app and because the free tier provides more than enough resources for a small site with low traffic. I prepared the project for deployment by configuring the production settings, defining the required libraries, and setting up gunicorn and whitenoise to serve my views and static files. Heroku’s Git integration allowed me to easily push my repository to the Heroku remote. I set the needed environment variables, fixed a bunch of typos in my requirements.txt and Profile, and ended up with a successfully deployed website. I connected my custom domain to my Heroku app and the site was live!</p>
+<p>I chose to deploy the site to Heroku because it’s one of the fastest and
+    easiest ways to deploy a Django app and because the free tier provides
+    more than enough resources for a small site with low traffic. I prepared the project for deployment by configuring the production settings, defining the required libraries, and setting up gunicorn and whitenoise to serve my views and static files. Heroku’s Git integration allowed me to easily push my repository to the Heroku remote. I set the needed environment variables, fixed a bunch of typos in my requirements.txt and Profile, and ended up with a successfully deployed website. I connected my custom domain to my Heroku app and the site was live!</p>
 
 <h2>Continuous Integration - Continuous Deployment</h2>
 
