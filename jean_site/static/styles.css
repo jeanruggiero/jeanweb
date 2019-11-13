@@ -88,9 +88,12 @@ footer div#contact-info {
 }
 
 footer div#contact-info a {
+    margin: auto 25px auto 25px;
+}
+
+a#linkedin, a#github, a#email {
     text-decoration: none;
     display: inline-block;
-    margin: auto 25px; auto 25px;
 }
 
 a#linkedin, a#linkedin img {
@@ -108,6 +111,7 @@ a#email, a#email img {
     width: 38.4px;
 }
 
+/****************************NAV BAR***********************/
 
 nav ul {
     list-style: none;
@@ -442,7 +446,15 @@ div#meet-team p.caption {
     margin: auto;
 }
 
+/**********************CONTACT STYLES****************************/
 
+div#contact-text p {
+    display: inline;
+}
+
+div#contact-text a {
+    vertical-align: -7px;
+}
 
 
 

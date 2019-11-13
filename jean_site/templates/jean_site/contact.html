@@ -1,0 +1,28 @@
+{% extends "jean_site/base.html" %}
+
+{% block header-large %}contact{% endblock %}
+
+{% block header-small %}job/research opportunities, site feedback, or just
+    say hi!{% endblock %}
+
+{% load static %}
+{% block content %}
+
+<div id="contact-text" class="c2-12">
+    <p>Connect on</p>
+    <a id="linkedin" href="https://www.linkedin.com/in/jean-ruggiero/">
+        <img src="{% static "icons/linkedin_icon.svg" %}" alt="LinkedIn logo">
+    </a>
+
+    <p>, check out my code</p>
+    <a id="github" href="https://github.com/jeanruggiero">
+        <img src="{% static "icons/github_icon.svg" %}" alt="GitHub logo">
+    </a>
+
+    <p>, or shoot me an email</p>
+    <a id="email" href="mailto:ruggiero.je@husky.neu.edu">
+        <img src="{% static "icons/email_icon.svg" %}" alt="Email icon">
+    </a>
+</div>
+
+{% endblock content %}
