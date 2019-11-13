@@ -205,7 +205,7 @@ div.resume-item {
 
 
 .grad-date::before {
-    content: url("/static/icons/grad_icon.svg");
+    content: url("/staticfiles/icons/grad_icon.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
@@ -215,7 +215,7 @@ div.resume-item {
 }
 
 .location::before {
-    content: url("/static/icons/location_icon.svg");
+    content: url("/staticfiles/icons/location_icon.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
@@ -226,7 +226,7 @@ div.resume-item {
 }
 
 .date::before {
-    content: url("/static/icons/calendar_icon.svg");
+    content: url("/staticfiles/icons/calendar_icon.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
@@ -256,24 +256,24 @@ p.resume, p.award {
 }
 
 .skill-2::before {
-    content: url("/static/icons/2star.svg");
+    content: url("/staticfiles/icons/2star.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
 
 .skill-3::before {
-    content: url("/static/icons/3star.svg");
+    content: url("/staticfiles/icons/3star.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
 
 .skill-4::before {
-    content: url("/static/icons/4star.svg");
+    content: url("/staticfiles/icons/4star.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
 .skill-5::before {
-    content: url("/static/icons/5star.svg");
+    content: url("/staticfiles/icons/5star.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
