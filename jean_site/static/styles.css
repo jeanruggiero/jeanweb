@@ -205,7 +205,7 @@ div.resume-item {
 
 
 .grad-date::before {
-    content: url("/staticfiles/icons/grad_icon.svg");
+    content: url("/static/icons/grad_icon.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
@@ -215,7 +215,7 @@ div.resume-item {
 }
 
 .location::before {
-    content: url("/staticfiles/icons/location_icon.svg");
+    content: url("/static/icons/location_icon.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
@@ -226,7 +226,7 @@ div.resume-item {
 }
 
 .date::before {
-    content: url("/staticfiles/icons/calendar_icon.svg");
+    content: url("/static/icons/calendar_icon.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
