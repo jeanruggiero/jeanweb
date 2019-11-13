@@ -68,46 +68,6 @@ p a {
     text-decoration: none;
     font-weight: 500;
 }
-
-/****************************NAV BAR***********************/
-
-nav ul {
-    list-style: none;
-    text-align: right;
-    margin-top: 15px;
-    margin-bottom: 0;
-}
-
-nav li {
-    display: inline;
-    text-align: right;
-    padding: 7px;
-}
-
-nav a {
-    font-size: 20px;
-    letter-spacing: 0.77px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #333333;
-    padding: 0 3px 0 3px;
-}
-
-nav a:hover {
-    #color: #5D397B;
-    font-weight: 700;
-}
-
-nav a.nav-current {
-    color: #5D397B;
-    font-weight: 700;
-    border-bottom: 4px solid #5D397B;
-}
-
-nav {
-    margin-bottom: 5px;
-}
-
 /************************FOOTER********************/
 footer {
     text-align: center;
@@ -151,7 +111,33 @@ a#email, a#email img {
     width: 38.4px;
 }
 
+/****************************NAV BAR***********************/
 
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+nav li {
+    display: inline;
+    text-align: right;
+    padding: 10px;
+}
+
+nav a {
+    font-size: 20px;
+    letter-spacing: 0.77px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333333;
+}
+
+nav a:hover {
+    color: #5D397B;
+    font-weight: 700;
+}
 
 /******************************HOME STYLES***************************/
 div.about {

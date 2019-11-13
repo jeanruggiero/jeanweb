@@ -29,15 +29,19 @@
         <header>
             <nav>
                 <ul id="nav-options">
-                    <li><a href="/">ABOUT</a></li>
-                    <li><a href="/resume">RESUME</a></li>
-                    <li><a href="/portfolio">PORTFOLIO</a></li>
-                    <li><a href="/contact">CONTACT</a></li>
+                    <li><a href="/" class="{% if request.path == '/' %}nav-current{% endif %}">ABOUT</a></li>
+                    <li><a href="/resume" class="
+{% if request.path == '/resume' %}nav-current{% endif %}">RESUME</a></li>
+                    <li><a href="/portfolio" class="
+{% if request.path == '/portfolio' %}nav-current{% endif %}">PORTFOLIO</a></li>
+                    <li><a href="/contact" class="
+{% if request.path == '/contact' %}nav-current{% endif %}">CONTACT</a></li>
                 </ul>
             </nav>
+
             <div class="header-text">
-                {% block site-name %}{% endblock %}
-                {% block section-name %}{% endblock %}
+                {% block site_name %}{% endblock %}
+                {% block section_name %}{% endblock %}
                 <div class="header-large">
                     <h1>{% block header_large %}{% endblock %}</h1>
                 </div>
