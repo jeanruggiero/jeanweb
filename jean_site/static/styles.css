@@ -256,24 +256,24 @@ p.resume, p.award {
 }
 
 .skill-2::before {
-    content: url("/staticfiles/icons/2star.svg");
+    content: url("/static/icons/2star.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
 
 .skill-3::before {
-    content: url("/staticfiles/icons/3star.svg");
+    content: url("/static/icons/3star.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
 
 .skill-4::before {
-    content: url("/staticfiles/icons/4star.svg");
+    content: url("/static/icons/4star.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
 .skill-5::before {
-    content: url("/staticfiles/icons/5star.svg");
+    content: url("/static/icons/5star.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
