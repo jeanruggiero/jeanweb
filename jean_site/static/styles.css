@@ -126,10 +126,6 @@ a.button:active {
     box-shadow: none;
 }
 
-button {
-    appearance: none;
-}
-
 /***********************GRIDS*******************************/
 
 #page-container {

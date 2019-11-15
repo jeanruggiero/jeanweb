@@ -27,9 +27,9 @@
     <div id="page-container">
     <nav id="nav-menu">
         <div id="show-menu-div">
-            <button id="show-menu" onclick="showMenu()">
+            <a id="show-menu" onclick="showMenu()">
                 <img id="menu-icon" src="{% static "icons/menu_icon.svg" %}" alt="Menu icon">
-            </button>
+            </a>
         </div>
         <ul id="nav-list">
             <li class="{% if request.path == '/' %}nav-current{% endif %}">
