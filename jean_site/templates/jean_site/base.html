@@ -14,33 +14,42 @@
       gtag('config', 'UA-152401506-1');
     </script>
 
+    <script src="{% static "jeanweb.js" %}"></script>
+
     <meta charset="UTF-8">
-    <meta name="description"
-            content="Jean Ruggiero's portfolio site." />
-    <meta http-equiv="author"
-        content="Jean Ruggiero">
-    <meta http-equiv="pragma"
-            content="no-cache">
+    <meta name="description" content="Jean Ruggiero's portfolio site." />
+    <meta http-equiv="author" content="Jean Ruggiero">
+    <meta http-equiv="pragma" content="no-cache">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>{% block title %}Jean Ruggiero, Rocket Scientist{% endblock %}</title>
 </head>
 <body>
     <div id="page-container">
+    <nav id="nav-menu">
+        <div id="show-menu-div">
+            <button id="show-menu" onclick="showMenu()">
+                <img id="menu-icon" src="{% static "icons/menu_icon.svg" %}" alt="Menu icon">
+            </button>
+        </div>
+        <ul id="nav-list">
+            <li class="{% if request.path == '/' %}nav-current{% endif %}">
+                <a href="/">ABOUT</a>
+            </li>
+            <li class="{% if request.path == '/resume' %}nav-current{% endif %}">
+                <a href="/resume">RESUME</a>
+            </li>
+            <li class="{% if request.path == '/portfolio' %}nav-current{% endif %}">
+                <a href="/portfolio">PORTFOLIO</a>
+            </li>
+            <li class="{% if request.path == '/contact' %}nav-current{% endif %}">
+                <a href="/contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
     <div class="grid-container">
+
         <header>
-            <nav>
-                <img id="show-menu" src="{% static "icons/menu_icon.svg" %}"
-                alt="Menu icon">
-                <ul>
-                    <li><a href="/" class="{% if request.path == '/' %}nav-current{% endif %}">ABOUT</a></li>
-                    <li><a href="/resume" class="
-{% if request.path == '/resume' %}nav-current{% endif %}">RESUME</a></li>
-                    <li><a href="/portfolio" class="
-{% if request.path == '/portfolio' %}nav-current{% endif %}">PORTFOLIO</a></li>
-                    <li><a href="/contact" class="
-{% if request.path == '/contact' %}nav-current{% endif %}">CONTACT</a></li>
-                </ul>
-            </nav>
+
 
             <div class="header-text">
                 {% block site_name %}{% endblock %}
