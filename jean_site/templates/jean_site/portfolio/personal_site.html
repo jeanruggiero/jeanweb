@@ -1,13 +1,13 @@
 {% extends "jean_site/portfolio/base_portfolio.html" %}
 {% block title %}Jean Ruggiero: Personal Site Redesign{% endblock %}
-{% block header_large %}Personal Site Redesign{% endblock %}
+{% block header_large %}personal site redesign{% endblock %}
 {% block header_small %}powered by good UX{% endblock %}
 
 {% block content %}
 {% load static %}
 <p>I’m working on an ongoing project to update my personal website. For several months, the site was just a simple landing page. The goal of the redesign project is to create a site that showcases my skills by following principles of agile product management and good UX. The projects highlighted on the site, as well as the design of the site itself, serve as examples of what I’m best at.</p>
 
-<h2>User Personas and Journey Mapping</h2>
+<h3>User Personas and Journey Mapping</h3>
 <p>To design a product that meets the needs of the user, I began by identifying who the users of my site are and what they would hope to accomplish when they visit. I started by developing user personas for two types of users:</p>
 
 <div class="c2-7">
@@ -30,10 +30,10 @@ Manny Manager, a tech-savvy manager looking to hire someone new.">
     map for my personal site">
 </div>
 
-<h2>The Minimum Viable Product</h2>
+<h3>The Minimum Viable Product</h3>
 <p>After taking some time to understand the user and their needs, I prioritized these needs and decided on the smallest subset of features that would allow the user to accomplish their goal. The most important features to help the user accomplish their goal of deciding whether or not to work with me were an ‘About’ page and a ‘Resume’ page. These features comprised the MVP (Minimum Viable Product) of my website.</p>
 
-<h2>Prototyping</h2>
+<h3>Prototyping</h3>
 <p>After the needs of the user were understood and prioritized, I created a site map to lay out the general arrangement of the site and its content.</p>
 
 <p>Next, I performed some design research. I looked through books and the internet at similar types of websites, analyzing which designs worked best and why. I hand sketched several design ideas for the main pages of the site (home, resume, portfolio) with the goal of arriving at a visual style for the site. Inspired by The Zen of Python, I decided on a clean design that puts content first and adheres to the idea that good design should go unnoticed. I developed a style guide in Sketch to capture the aesthetic I was aiming to create. Next, I created a Sketch prototype of my MVP website.
@@ -51,34 +51,34 @@ The latest Sketch prototypes can be found on GitHub
     <a href="https://jeanruggiero459410.invisionapp.com/overview/Personal-Site-ck2gjl3yi01og017vku660yor/screens?v=h%2F1FwK91Z4sZDIHKn9BX4g%3D%3D&linkshare=urlcopied">
         here</a>.</p>
 
-<h2>Usability Testing</h2>
+<h3>Usability Testing</h3>
 <p class="c2-7">I performed a short usability test using the clickable InVision prototype. While a single user test is not sufficient to verify a design, the data helped to validate some assumptions. In general, the user realized that CTAs were clickable. The navigation bar tested successfully. Some things didn’t go over so well: the user didn’t notice the download button on the resum page until asked a probing question about it at the end of the interview. There was no way to get from project pages back to the portfolio page. The use of headers related to content on some pages and quotations on other pages was an information hierarchy violation quickly noticed by the user, so headers were modified to be consistent across all pages.</p>
 <div class="c7-12">
     <img src="{% static "images/user_research_notes.jpg" %}" alt="Usability
     testing notes arranged into categories (good, bad, ideas).">
 </div>
 
-<h2>Development</h2>
+<h3>Development</h3>
 <p>With design prototypes of the MVP complete and major usability issues addressed, it was time to start coding the site. I chose to use Django as my web framework due to familiarity and because of its powerful templating engine (common look and feel, here we come!). I decided to use the built-in CSS3 grid system as a starting point for the layout of the site.</p>
 
 <p>I started by creating a GitHub repository for the project, starting a Django project, and committing the empty site. I created a base template with things like the navigation bar, footer, and header layout. Next, I built content templates for the home and resume pages. I created views to serve the site’s pages. With the content layer complete, I created a stylesheet and fine-tuned the layout of design elements on both pages. I tested the site using the Django development server, including verifying that all links worked properly.</p>
 
-<h2>Deployment</h2>
+<h3>Deployment</h3>
 <p>I chose to deploy the site to Heroku because it’s one of the fastest and
     easiest ways to deploy a Django app and because the free tier provides
     more than enough resources for a small site with low traffic. I prepared the project for deployment by configuring the production settings, defining the required libraries, and setting up gunicorn and whitenoise to serve my views and static files. Heroku’s Git integration allowed me to easily push my repository to the Heroku remote. I set the needed environment variables, fixed a bunch of typos in my requirements.txt and Profile, and ended up with a successfully deployed website. I connected my custom domain to my Heroku app and the site was live!</p>
 
-<h2>Continuous Integration - Continuous Deployment</h2>
+<h3>Continuous Integration - Continuous Deployment</h3>
 
 <p>After getting the MVP up and working, it was time to burn down some tech debt. The idea behind Continuous Integration - Continuous Deployment, or CI/CD, is that features can be pushed to the live web app as soon as they are complete and tested, rather than collecting changes and waiting for a version update to release them. I stood up a CI/CD pipeline using Heroku’s integration with GitHub. The site now has separate staging and production apps. As soon as code changes are pushed to the master branch of my Git repository, they get deployed to staging. Then I can put my product manager hat on and open up the staging app and verify that all of the changes look and work as intended. I fix any bugs I find and then, once everything looks good, I deploy the app to production and the new features are live.</p>
 
-<h2>Product Management</h2>
+<h3>Product Management</h3>
 <p>Throughout development, I used GitHub’s project feature to track and prioritize issues on a simple Kanban board. Issues were written as user stories in order to capture what the user wants to do and why. Acceptance criteria were also added to issues so it was clear when they were ready to be bought off. Issues that haven’t been started show up in the ‘To Do’ column. Before I start working on something, I drag it over to ‘In Progress.’ When I push the code changes to GitHub, the issue automatically moves to ‘Finished.’ From there, I put my PM hat on and verify the changes in staging. Once I deploy them to production, I move the issues to ‘Deployed’ on the Kanban.
     See this project’s board
     <a href="https://github.com/jeanruggiero/jeanweb/projects/1">
         here</a>.</p>
 
-<h2>Iteration</h2>
+<h3>Iteration</h3>
 <p>Once the MVP was live, the design/test/develop/deploy process was repeated for each new feature added to the site. The next feature added to the site was the ‘Portfolio’ landing page and a couple project pages. Design/test cycles of mobile page layouts are now underway.</p>
 
 {% endblock content %}

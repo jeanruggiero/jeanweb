@@ -28,7 +28,7 @@
     <div class="grid-container">
         <header>
             <nav>
-                <ul id="nav-options">
+                <ul>
                     <li><a href="/" class="{% if request.path == '/' %}nav-current{% endif %}">ABOUT</a></li>
                     <li><a href="/resume" class="
 {% if request.path == '/resume' %}nav-current{% endif %}">RESUME</a></li>
@@ -46,10 +46,10 @@
                     <h1>{% block header_large %}{% endblock %}</h1>
                 </div>
                 <div class="header-small">
-                    <h2 class="header-sub">{% block header_small %}
-                        {% endblock %}</h2>
+                    <p class="tagline">{% block header_small %}
+                        {% endblock %}</p>
                 </div>
-                <div id="header-rule"></div>
+{#                <div id="header-rule"></div>#}
             </div>
         </header>
 
