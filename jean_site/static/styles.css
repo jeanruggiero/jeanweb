@@ -24,6 +24,10 @@ h3 {
     grid-column: 2/12;
 }
 
+h3:first-of-type {
+    margin-top: 0;
+}
+
 h4 {
     font-size: 18px;
     font-weight: 500;
@@ -48,7 +52,7 @@ p {
 
 p.tagline {
     font-size: 14px;
-    display: inline;
+    display: inline-block;
 }
 
 footer p {
@@ -99,8 +103,8 @@ p a:hover {
 }
 
 a.button {
-    height: 44px;
-    width: 210px;
+    /*height: 44px;*/
+    /*width: 210px;*/
     background: #305394;
     border-radius: 3px;
     padding: 10px 15px 10px 15px;
@@ -146,12 +150,12 @@ div>img {
 
 }
 
-.c3-6 {
-    grid-column: 3/6;
+.c3-7 {
+    grid-column: 3/7;
 }
 
-.c6-9 {
-    grid-column: 6/9;
+.c7-11 {
+    grid-column: 7/11;
 }
 
 .c2-5 {
@@ -215,11 +219,11 @@ header {
 div.header-large {
     height: 57px;
     margin-right: 2px;
-    display: inline-block;
+    display: inline;
 }
 
 div.header-small {
-    display: inline-block;
+    display: inline;
     vertical-align: baseline;
 }
 
@@ -310,13 +314,13 @@ h4.resume {
     margin: 0;
 }
 
-.job-title {
+.resume.job-title {
     text-align: right;
     grid-column: 2/5;
 }
 
 .grad-date, .location, .date {
-    display: inline-block;
+    display: inline;
     margin-top: 5px;
     margin-bottom: 0;
     vertical-align: middle;
@@ -335,6 +339,7 @@ h4.resume {
 }
 
 .location {
+    display: inline-block;
     width: 210px;
 }
 
@@ -376,6 +381,8 @@ p.resume, p.award {
     margin: 7px 0 7px 0;
     vertical-align: middle;
 }
+
+
 
 #download-bar {
     text-align: center;
@@ -434,3 +441,131 @@ div#contact-text p {
 div#contact-text a {
     vertical-align: -7px;
 }
+
+/********************MOBILE STYLES***********************/
+@media only screen and (max-width: 550px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    h5.header-slash {
+        font-size: 24px;
+        letter-spacing: -5px;
+        padding-right: 4px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .tagline, footer p{
+        font-size: 10px;
+    }
+
+    p {
+        line-height: 14px;
+    }
+
+    p.caption {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    header {
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        font-size: 21px;
+    }
+
+    a.button {
+        font-size: 16px;
+    }
+
+    .resume.job-title {
+        text-align: left;
+        grid-column: 2/12;
+    }
+
+    div.resume-item {
+        grid-column: 2/12;
+    }
+
+    .location {
+        width: 102px;
+    }
+
+    .grad-date::before {
+        content: url("/static/icons/grad_date_mobile.svg");
+    }
+
+    .date::before {
+        content: url("/static/icons/date_mobile.svg");
+    }
+
+    .location::before {
+        content: url("/static/icons/location_mobile.svg");
+    }
+
+    .skill-2::before {
+        content: url("/static/icons/2-star_mobile.svg");
+    }
+
+    .skill-3::before {
+        content: url("/static/icons/3-star_mobile.svg");
+    }
+
+    .skill-4::before {
+        content: url("/static/icons/4-star_mobile.svg");
+    }
+
+    .skill-5::before {
+        content: url("/static/icons/5-star_mobile.svg");
+    }
+
+    /*.skill-2::before {*/
+    /*    content: "";*/
+    /*    background-image: url("/static/icons/2star.svg");*/
+    /*!*background-size: 113px 21px;*!*/
+    /*!*display: inline-block;*!*/
+    /*!*width: 113px;*!*/
+    /*!*height: 21px;*!*/
+    /*!*!*content: url("/static/icons/2star.svg");*!*!*/
+    /*!*padding-right: 5px;*!*/
+    /*!*vertical-align: inherit;*!*/
+    /*}*/
+
+    /*.skill-2, .skill-3, .skill-4, .skill-5 {*/
+    /*    margin: 7px 0 7px 0;*/
+    /*    vertical-align: middle;*/
+    /*}*/
+
+    .c3-7, .c7-11, .c2-5, .c5-11, .c5-12, .c2-6, .c6-12, .c2-7,
+    .c7-12, .c2-8, .c8-12, .c2-9, .c9-12, .c2-12, .c4-9 {
+        grid-column: 2/12;
+    }
+
+}
+
+/*.skill-2::before {*/
+/*    content: "";*/
+/*    background-image: url("/static/icons/2star.svg");*/
+/*    background-size: 113px 21px;*/
+/*    display: inline-block;*/
+/*    width: 113px;*/
+/*    height: 21px;*/
+/*    !*content: url("/static/icons/2star.svg");*!*/
+/*    padding-right: 5px;*/
+/*    vertical-align: inherit;*/
+/*}*/

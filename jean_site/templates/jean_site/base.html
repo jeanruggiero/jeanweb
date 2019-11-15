@@ -21,6 +21,7 @@
         content="Jean Ruggiero">
     <meta http-equiv="pragma"
             content="no-cache">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>{% block title %}Jean Ruggiero, Rocket Scientist{% endblock %}</title>
 </head>
 <body>
@@ -28,6 +29,8 @@
     <div class="grid-container">
         <header>
             <nav>
+                <img id="show-menu" src="{% static "icons/menu_icon.svg" %}"
+                alt="Menu icon">
                 <ul>
                     <li><a href="/" class="{% if request.path == '/' %}nav-current{% endif %}">ABOUT</a></li>
                     <li><a href="/resume" class="
