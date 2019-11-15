@@ -5,6 +5,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #333333;
+    margin: 0;
 }
 
 /**********************STYLESHEET****************************/
@@ -53,6 +54,7 @@ p {
 p.tagline {
     font-size: 14px;
     display: inline-block;
+    margin-bottom: 0;
 }
 
 footer p {
@@ -86,7 +88,7 @@ nav a:hover {
     font-weight: 700;
 }
 
-nav a.nav-current {
+nav li.nav-current a {
     color: #5D397B;
     font-weight: 700;
     border-bottom: 4px solid #5D397B;
@@ -216,6 +218,8 @@ header {
     margin: 15px 0 30px 0;
 }
 
+
+
 div.header-large {
     height: 57px;
     margin-right: 2px;
@@ -233,11 +237,16 @@ div.header-text {
 
 /****************************NAV BAR***********************/
 
+#show-menu {
+    display: none;
+    padding: 25px 0 0 25px;
+}
+
 nav ul {
     list-style: none;
     text-align: right;
-    margin-top: 15px;
-    margin-bottom: 0;
+    padding-top: 15px;
+    margin: 0;
 }
 
 nav li {
@@ -246,9 +255,9 @@ nav li {
     padding: 7px;
 }
 
-nav {
-    margin-bottom: 5px;
-}
+/*nav {*/
+/*    margin-bottom: 5px;*/
+/*}*/
 
 /************************FOOTER********************/
 footer {
@@ -339,7 +348,12 @@ h4.resume {
 }
 
 .location {
+    display: inline-block;
     width: 210px;
+}
+
+.date {
+    display: inline-block;
 }
 
 .date::before {
@@ -412,6 +426,10 @@ a.project:active img {
     box-shadow: none;
 }
 
+a.project {
+    margin: 5px;
+}
+
 /*********************PROJECT PAGES**************************/
 
 div#meet-team div {
@@ -467,7 +485,7 @@ div#contact-text a {
         font-size: 14px;
     }
 
-    .tagline, footer p{
+    p.tagline, footer p{
         font-size: 10px;
     }
 
@@ -485,7 +503,7 @@ div#contact-text a {
     }
 
     nav a {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     a.button {
@@ -501,50 +519,37 @@ div#contact-text a {
         grid-column: 2/12;
     }
 
+    .location {
+        width: 102px;
+    }
+
     .grad-date::before {
-        content: url("static/icons/grad_date_mobile.svg");
+        content: url("/static/icons/grad_date_mobile.svg");
     }
 
     .date::before {
-        content: url("static/icons/date_mobile.svg");
+        content: url("/static/icons/date_mobile.svg");
     }
 
     .location::before {
-        content: url("static/icons/location_mobile.svg");
+        content: url("/static/icons/location_mobile.svg");
     }
 
     .skill-2::before {
-        content: url("static/icons/2-star_mobile_mobile.svg");
+        content: url("/static/icons/2-star_mobile.svg");
     }
 
     .skill-3::before {
-        content: url("static/icons/3-star_mobile_mobile.svg");
+        content: url("/static/icons/3-star_mobile.svg");
     }
 
     .skill-4::before {
-        content: url("static/icons/4-star_mobile_mobile.svg");
+        content: url("/static/icons/4-star_mobile.svg");
     }
 
     .skill-5::before {
-        content: url("static/icons/5-star_mobile_mobile.svg");
+        content: url("/static/icons/5-star_mobile.svg");
     }
-
-    /*.skill-2::before {*/
-    /*    content: "";*/
-    /*    background-image: url("/static/icons/2star.svg");*/
-    /*!*background-size: 113px 21px;*!*/
-    /*!*display: inline-block;*!*/
-    /*!*width: 113px;*!*/
-    /*!*height: 21px;*!*/
-    /*!*!*content: url("/static/icons/2star.svg");*!*!*/
-    /*!*padding-right: 5px;*!*/
-    /*!*vertical-align: inherit;*!*/
-    /*}*/
-
-    /*.skill-2, .skill-3, .skill-4, .skill-5 {*/
-    /*    margin: 7px 0 7px 0;*/
-    /*    vertical-align: middle;*/
-    /*}*/
 
     .c3-7, .c7-11, .c2-5, .c5-11, .c5-12, .c2-6, .c6-12, .c2-7,
     .c7-12, .c2-8, .c8-12, .c2-9, .c9-12, .c2-12, .c4-9 {
@@ -553,14 +558,47 @@ div#contact-text a {
 
 }
 
-/*.skill-2::before {*/
-/*    content: "";*/
-/*    background-image: url("/static/icons/2star.svg");*/
-/*    background-size: 113px 21px;*/
-/*    display: inline-block;*/
-/*    width: 113px;*/
-/*    height: 21px;*/
-/*    !*content: url("/static/icons/2star.svg");*!*/
-/*    padding-right: 5px;*/
-/*    vertical-align: inherit;*/
-/*}*/
+@media only screen and (max-width: 630px) {
+    /*nav {*/
+    /*    grid-column: 1/13;*/
+    /*}*/
+    nav ul {
+        display: none;
+        background-color: #333333;
+    }
+
+    #show-menu {
+        display: block;
+    }
+
+    nav ul {
+        padding: 0;
+        border-bottom: 0.5px solid #333333;
+    }
+
+    nav li {
+        display: block;
+        text-align: left;
+        border: 0.5px solid #333333;
+        border-bottom: none;
+        padding: 20px;
+    }
+
+    nav a, nav li.nav-current a {
+        color: #FFFFFF;
+    }
+
+    nav li.nav-current {
+        background-color: #5D397B;
+    }
+
+    nav li.nav-current a {
+        border: none;
+    }
+
+    header {
+        margin-top: 0;
+    }
+}
+
+
