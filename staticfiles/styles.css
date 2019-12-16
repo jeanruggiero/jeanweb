@@ -338,7 +338,7 @@ h4.resume {
     grid-column: 2/5;
 }
 
-.grad-date, .location, .date {
+.grad-date, .location, .date, .gpa {
     display: inline;
     margin-top: 5px;
     margin-bottom: 0;
@@ -351,13 +351,19 @@ h4.resume {
     vertical-align: inherit;
 }
 
+.gpa::before {
+    content: url("/static/icons/gpa_icon.svg");
+    padding-right: 5px;
+    vertical-align: inherit;
+}
+
 .location::before {
     content: url("/static/icons/location_icon.svg");
     padding-right: 5px;
     vertical-align: inherit;
 }
 
-.location {
+.location, .grad-date {
     display: inline-block;
     width: 210px;
 }
@@ -529,12 +535,16 @@ div#contact-text a {
         grid-column: 2/12;
     }
 
-    .location {
+    .location, .grad-date {
         width: 102px;
     }
 
     .grad-date::before {
         content: url("/static/icons/grad_date_mobile.svg");
+    }
+
+    .gpa::before {
+        content: url("/static/icons/gpa_mobile.svg")
     }
 
     .date::before {
@@ -607,7 +617,7 @@ div#contact-text a {
     }
 
     header {
-        margin-top: 0;
+        margin-top: 5px;
     }
 }
 
