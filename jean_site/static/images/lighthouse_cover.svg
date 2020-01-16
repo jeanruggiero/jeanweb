@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="330px" viewBox="0 0 330 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>lighthouse_cover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="330" height="330"></rect>
+        <radialGradient cx="50%" cy="52.9613598%" fx="50%" fy="52.9613598%" r="47.0386402%" id="radialGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFEFE" offset="15.9733953%"></stop>
+            <stop stop-color="#FEFBFB" stop-opacity="0.659992351" offset="57.5934333%"></stop>
+            <stop stop-color="#FDF8F8" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="94.8743666%" y1="50%" x2="-6.66133815e-14%" y2="57.9797177%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.13824847" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.915100524" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="84.9899704%" y1="51.0411127%" x2="2.20386402%" y2="56.7832508%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0.27933785" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.795563811" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="77.2540118%" y1="50%" x2="0%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" stop-opacity="0.419443837" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.749016608" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="79.9144848%" y1="50%" x2="0%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" stop-opacity="0.260735358" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.936106862" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="58.1872889%" y1="50%" x2="0%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" stop-opacity="0.234784747" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.497541521" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="81.8069046%" y1="50%" x2="29.4490174%" y2="50%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.656932911" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-10">
+            <stop stop-color="#FFFFFF" stop-opacity="0.0476398601" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.539963942" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="81.994299%" y1="50%" x2="0%" y2="50%" id="linearGradient-11">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.865903628" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="94.7366629%" y1="100%" x2="9.14523679%" y2="50%" id="linearGradient-12">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="90.3505068%" y1="50%" x2="0%" y2="50%" id="linearGradient-13">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFD" stop-opacity="0.827769886" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Jean-Ruggiero-Personal-Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio" transform="translate(-375.000000, -807.000000)">
+            <g id="lighthouse_cover" transform="translate(375.000000, 807.000000)">
+                <g id="lighthouse-icon-square">
+                    <g id="Mask" fill="#D8D8D8" fill-rule="nonzero">
+                        <rect id="path-1" x="0" y="0" width="330" height="330"></rect>
+                    </g>
+                    <g id="Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <g id="Group" mask="url(#mask-2)" fill-rule="nonzero">
+                            <g transform="translate(-26.072235, -26.072235)">
+                                <path d="M381.399549,272.53571 C381.399549,310.390038 377.458127,324.116932 370.056961,337.955909 C362.655796,351.794886 351.794886,362.655796 337.955909,370.056961 C324.255322,377.384115 310.664587,381.320374 273.664125,381.399549 L272.53571,381.399549 L108.863839,381.399549 L107.735423,381.399549 C70.7349613,381.320374 57.1442264,377.384115 43.4436395,370.056961 C29.6046629,362.655796 18.743753,351.794886 11.3425873,337.955909 C4.01543321,324.255322 0.0791744053,310.664587 0,273.664125 L0,272.53571 L0,107.735423 C0.0791744053,70.7349613 4.01543321,57.1442264 11.3425873,43.4436395 C18.743753,29.6046629 29.6046629,18.743753 43.4436395,11.3425873 C57.1442264,4.01543321 70.7349613,0.0791744053 107.735423,0 L108.863839,0 L273.664125,0 C310.664587,0.0791744053 324.255322,4.01543321 337.955909,11.3425873 C351.794886,18.743753 362.655796,29.6046629 370.056961,43.4436395 C377.384115,57.1442264 381.320374,70.7349613 381.399549,107.735423 L381.399549,108.863839 L381.399549,272.53571 Z" id="Path" fill="#0D4E7B"></path>
+                                <circle id="Oval" fill="url(#radialGradient-3)" cx="83.8036117" cy="285.677201" r="12.2911964"></circle>
+                                <path d="M95.1541711,293.498871 C95.9212676,293.498871 96.5629813,294.081344 96.637051,294.844856 L104.875372,379.76585 C104.950483,380.540099 104.418772,381.233322 103.668479,381.373857 L102.275123,381.357171 C83.8544563,381.107651 71.7009167,379.77712 62.2899815,377.435071 L71.9079214,294.816438 C71.9953595,294.065341 72.6315997,293.498871 73.3877695,293.498871 L95.1541711,293.498871 Z" id="Path" fill="#FFFFFF"></path>
+                                <polygon id="Path" fill="url(#linearGradient-4)" points="381.399344 74.3550339 381.399344 133.791535 84.708395 285.586309 83.8719396 286.069237"></polygon>
+                                <polygon id="Path" fill="url(#linearGradient-5)" points="-1.5878946e-14 226.917088 84.2217046 286.083394 84.6235619 286.306148 -1.5878946e-14 259.315192"></polygon>
+                                <path d="M84.2481918,285.813331 L15.7086806,345.189797 C14.1414002,342.878402 12.6850775,340.466147 11.3425873,337.955909 C8.96002025,333.500896 6.93599018,329.057498 5.28656624,323.817069 L83.9599349,285.986533 L84.2481918,285.813331 Z" id="Path" fill="url(#linearGradient-6)"></path>
+                                <path d="M84.0729424,285.640409 L350.09013,362.081664 C346.34861,365.070905 342.298908,367.7343 337.955909,370.056961 C336.702318,370.727389 335.449647,371.369428 334.179878,371.98272 L84.9915261,285.938875 L84.0729424,285.640409 Z" id="Path" fill="url(#linearGradient-7)"></path>
+                                <polygon id="Path" fill="url(#linearGradient-8)" points="381.399517 227.238149 381.399517 237.200722 84.5141531 286.104233 83.562971 286.271952"></polygon>
+                                <path d="M379.909044,255.253585 L379.909044,270.273427 L85.7862488,285.639615 L84.8227463,285.70699 L379.909044,255.253585 Z M451.0693,247.910153 L452.368377,266.487814 L450.676539,266.576384 L450.676539,247.950379 L451.0693,247.910153 Z" id="Shape" fill="url(#linearGradient-9)"></path>
+                                <polygon id="Path" fill="url(#linearGradient-10)" points="381.399352 191.131828 381.399352 197.074063 84.499867 285.790164 83.5762142 286.072553"></polygon>
+                                <polygon id="Path" fill="url(#linearGradient-11)" points="84.0891765 285.164793 379.909222 344.374838 379.909222 350.000481 85.0339255 285.365606"></polygon>
+                                <polygon id="Path" fill-opacity="0.497541521" fill="#FFFFFD" points="-1.5878946e-14 266.511129 84.1499955 286.006152 84.4789363 286.07607 -1.5878946e-14 271.113995"></polygon>
+                                <path d="M326.285588,6.1108859 C330.242798,7.50986147 333.783029,9.14139026 337.305939,10.9975306 L84.6145901,285.65442 L83.9355998,286.408516 L326.285588,6.1108859 Z" id="Path" fill="url(#linearGradient-12)"></path>
+                                <polygon id="Path" fill="url(#linearGradient-13)" points="-3.7050874e-14 202.321287 84.3652308 285.911371 84.708401 286.242767 -3.7050874e-14 208.292573"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(0.000000, 248.000000)">
+                    <rect id="Rectangle" fill="#333333" opacity="0.748325893" x="0" y="0" width="330" height="82"></rect>
+                    <text id="Lighthouse" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="14" y="35">Lighthouse</tspan>
+                    </text>
+                    <text id="A-(very)-lightweight" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" fill="#FFFFFF">
+                        <tspan x="14" y="63">A (very) lightweight C test framework</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

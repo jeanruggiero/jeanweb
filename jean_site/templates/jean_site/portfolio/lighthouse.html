@@ -1,0 +1,35 @@
+{% extends "jean_site/portfolio/base_portfolio.html" %}
+{% block title %}Jean Ruggiero - Portfolio: Building a C Testing Framework{% endblock %}
+{% block header_large %}lighthouse{% endblock %}
+{% block header_small %}a (very) lightweight testing framework for C{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div id="download-bar" class="c2-12">
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://github.com/jeanruggiero/lighthouse">
+
+            VIEW PROJECT
+
+            <img src="{% static '/icons/github_logo_light.svg' %}" alt="GitHub Logo" />
+        </a>
+    </div>
+</div>
+
+<h3>A Framework for Test-Driven Algorithms</h3>
+
+<p>I'm taking an algorithms in C class this semester, and by the second assignment, I already needed a better way to test my code on the command
+    line. I'm currently focused on being disciplined about test-driven development, so I was looking to make testing fast and easy. I started
+    building some unit testing infrastructure and using it to run my tests so that I could quickly tell which tests failed. I realized what I had
+    built may be useful for my classmates and anyone else developing small C programs, so I spun it off into a header file, added some documentation
+    and examples of its usage, and pushed it up to GitHub for anyone to use.
+</p>
+
+<h3>What's Next?</h3>
+<p>I hope to improve on this project throughout the semester and I've invited my classmates to contribute. If it becomes portable and/or useful
+    enough, I hope to turn it into my first open source project.
+</p>
+
+{% endblock content %}

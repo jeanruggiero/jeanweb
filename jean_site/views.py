@@ -28,5 +28,9 @@ def andrew_website(request):
     return render(request, 'jean_site/portfolio/andrew_website.html')
 
 
+def lighthouse(request):
+    return render(request, 'jean_site/portfolio/lighthouse.html')
+
+
 def contact(request):
     return render(request, 'jean_site/contact.html')
