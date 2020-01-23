@@ -26,10 +26,6 @@ h3 {
     grid-column: 2/12;
 }
 
-/*h3:first-of-type {*/
-/*    margin-top: 0;*/
-/*}*/
-
 h4 {
     font-size: 18px;
     font-weight: 500;
@@ -159,7 +155,7 @@ div.grid-container {
 
 div.grid-container>div {
     display: inline-block;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
 }
 
 div>img {
@@ -167,6 +163,11 @@ div>img {
     width: 100%;
 
 }
+
+.c2-4 {
+    grid-column: 2/4;
+}
+
 .c3-6 {
     grid-column: 3/6;
 }
@@ -449,25 +450,60 @@ p.resume, p.award {
 }
 
 /**************************PORTFOLIO**************************/
-a.project img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5);
-}
-
-a.project:hover img {
+div.project {
+    position: relative;
+    margin-bottom: 1.8vw;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.5);
 }
 
-a.project:active img {
+div.project:hover {
+    box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.5);
+}
+
+div.project:active {
     box-shadow: none;
 }
 
-a.project {
-    margin: 5px;
+div.project a {
+    display: block;
+    object-fit: contain;
 }
+
+div.project img {
+    display: block;
+    width: 100%;
+}
+
+div.project div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.65);
+    width: 100%;
+}
+
+div.project h3 {
+    color: white;
+    font-size: 1rem;
+    margin: 2vw 1vw 0.5vw 1vw;
+}
+
+div.project p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin: 0.5vw 1vw 1.5vw 1vw;
+}
+
+#project-categories ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#project-categories li {
+    padding: 0 0 8px 0;
+}
+
 
 /*********************PROJECT PAGES**************************/
 
@@ -595,7 +631,7 @@ div#contact-text a {
     }
 
     .c3-6, .c3-7, .c7-11, .c2-5, .c5-11, .c5-12, .c2-6, .c6-9, .c6-12, .c2-7,
-    .c7-12, .c2-8, .c8-12, .c2-9, .c9-12, .c2-12, .c4-9 {
+    .c7-12, .c2-8, .c8-12, .c2-9, .c9-12, .c2-12, .c4-9, .c4-7 {
         grid-column: 2/12;
     }
 
@@ -644,4 +680,13 @@ div#contact-text a {
     }
 }
 
+@media only screen and (max-width: 1120px) {
+    div.project h3 {
+        font-size: 0.8rem;
+    }
 
+    div.project p {
+        font-size: 0.7rem;
+    }
+
+}

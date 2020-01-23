@@ -33,3 +33,53 @@ window.addEventListener('resize', function() {
         navList.style.display = 'none';
     }
 }, false);
+
+//
+// function filterProjects() {
+//     let codeProjects = document.getElementsByClassName('code');
+//     let designProjects = document.getElementsByClassName('design');
+//     let engineeringProjects = document.getElementsByClassName('engineering');
+//
+//     let codeBox = document.getElementById('code-box');
+//     let designBox = document.getElementById('design-box');
+//     let engineeringBox = document.getElementById('engineering-box');
+//
+//     if (!codeBox.checked) {
+//         for (let project of codeProjects) {
+//             project.style.display = 'none';
+//         }
+//     } else {
+//         for (let project of codeProjects) {
+//             project.style.display = 'block';
+//         }
+//     }
+//
+//     if (!designBox.checked) {
+//         for (let project of designProjects) {
+//             project.style.display = 'none';
+//         }
+//     } else {
+//         for (let project of designProjects) {
+//             project.style.display = 'block';
+//         }
+//     }
+//
+//     if (!engineeringBox.checked) {
+//         for (let project of engineeringProjects) {
+//             project.style.display = 'none';
+//         }
+//     } else {
+//         for (let project of engineeringProjects) {
+//             project.style.display = 'block';
+//         }
+//     }
+// }
+//
+//
+// window.onload = function() {
+//     document.getElementById('code-box').addEventListener('change', filterProjects);
+//     document.getElementById('design-box').addEventListener('change', filterProjects);
+//     document.getElementById('engineering-box').addEventListener('chang', filterProjects);
+// };
+//
+

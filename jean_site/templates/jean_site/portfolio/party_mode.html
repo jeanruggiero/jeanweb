@@ -1,0 +1,33 @@
+{% extends "jean_site/portfolio/base_portfolio.html" %}
+{% block title %}Jean Ruggiero - Portfolio: An IOT device that gets the party started{% endblock %}
+{% block header_large %}party mode{% endblock %}
+{% block header_small %}an IOT device that gets the party started{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div id="download-bar" class="c2-12">
+
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://github.com/jeanruggiero/nodemcu-exercise">
+
+            VIEW CODE
+
+            <img src="{% static '/icons/github_logo_light.svg' %}" alt="GitHub Logo" />
+        </a>
+    </div>
+
+
+</div>
+
+<p>As part of a course in programming for the web with Python, I developed an IOT device that connects to a home wi-fi system. Any device on the network with a web browser can visit the device’s URL to activate party mode. A light sensor brightens or dims the lights according to ambient lighting to avoid blinding anyone. Check it out!</p>
+
+
+    <div class="c2-12 video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kew5KnEXfF8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+{% endblock content %}
