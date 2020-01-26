@@ -465,7 +465,7 @@ div.portfolio-container {
 }
 
 div.portfolio-container>div {
-    flex-shrink: 1;
+    /*flex-shrink: 1;*/
     display: inline-block;
 }
 
@@ -649,6 +649,11 @@ div#contact-text a {
 
     .skill-5::before {
         content: url("/static/icons/5-star_mobile.svg");
+    }
+
+    div.project img {
+        width: 80vw;
+        height: auto;
     }
 
     .c3-6, .c3-7, .c7-11, .c2-5, .c5-11, .c5-12, .c2-6, .c6-9, .c6-12, .c2-7,
