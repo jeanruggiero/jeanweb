@@ -1,0 +1,50 @@
+{% extends "jean_site/portfolio/base_portfolio.html" %}
+{% block title %}Jean Ruggiero - Portfolio: Basic Rock Class Website Redesign{% endblock %}
+{% block header_large %}basic rock class website{% endblock %}
+{% block header_small %}a website for managing course content{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div id="download-bar" class="c2-12">
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://jeanruggiero459410.invisionapp.com/overview/BRC-Website-ck39hhp0o0m5m015pdokatbjn/screens?v=h%2F1FwK91Z4sZDIHKn9BX4g%3D%3D&linkshare=urlcopied">
+
+            PROTOTYPE
+
+            <i class="material-icons">launch</i>
+        </a>
+    </div>
+
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://github.com/jeanruggiero/brc-web">
+
+            VIEW CODE
+
+            <img src="{% static '/icons/github_logo_light.svg' %}" alt="GitHub Logo" />
+        </a>
+    </div>
+
+
+</div>
+
+<p>My latest project is a complete redesign of the website I made last year for the Boealps Basic Rock Class. In my second year as head instructor,
+    I identified a need for a website to better organize and distribute course content, and for students to interact with each other during the
+    class. I created a basic website using Django that did the job for a year, but it had a lot of usability issues and the visual design needed to
+    be improved.
+</p>
+
+<p>
+    This year, I'm working on revamping the website. The backend is being transformed into a Django REST API that adheres to the OpenAPI
+    specification. The API specification is out and can be viewed on <a href="https://app.swaggerhub.com/apis-docs/jeanruggiero/brc-web/1.0.0">
+    Swagger Hub</a>.
+</p>
+
+<p>
+    The front end will be a React app and will be built according to the design specification I created in Sketch. A clickable prototype of the
+    design can be viewed using the button up top.
+</p>
+
+{% endblock content %}

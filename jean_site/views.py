@@ -31,8 +31,13 @@ def andrew_website(request):
 def lighthouse(request):
     return render(request, 'jean_site/portfolio/lighthouse.html')
 
+
 def party_mode(request):
     return render(request, 'jean_site/portfolio/party_mode.html')
+
+
+def brc_website(request):
+    return render(request, 'jean_site/portfolio/brc_website.html')
 
 
 def contact(request):
