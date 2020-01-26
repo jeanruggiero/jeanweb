@@ -252,6 +252,10 @@ div>img {
     grid-column: 4/7;
 }
 
+.c4-8 {
+    grid-column: 4/8;
+}
+
 /**************HEADER***********************/
 header {
     grid-column: 2/12;
@@ -450,9 +454,26 @@ p.resume, p.award {
 }
 
 /**************************PORTFOLIO**************************/
+div.portfolio-container {
+    grid-column: 2/12;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-start;
+}
+
+div.portfolio-container>div {
+    flex-shrink: 1;
+    display: inline-block;
+}
+
 div.project {
     position: relative;
-    margin-bottom: 1.8vw;
+    width: fit-content;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.5);
 }
 
@@ -471,7 +492,7 @@ div.project a {
 
 div.project img {
     display: block;
-    width: 100%;
+    height: 270px;
 }
 
 div.project div {
@@ -485,14 +506,14 @@ div.project div {
 div.project h3 {
     color: white;
     font-size: 1rem;
-    margin: 2vw 1vw 0.5vw 1vw;
+    margin: 1vw 1vw 0.2vw 1vw;
 }
 
 div.project p {
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1rem;
-    margin: 0.5vw 1vw 1.5vw 1vw;
+    margin: 0.2vw 1vw 1vw 1vw;
 }
 
 #project-categories ul {
@@ -631,7 +652,7 @@ div#contact-text a {
     }
 
     .c3-6, .c3-7, .c7-11, .c2-5, .c5-11, .c5-12, .c2-6, .c6-9, .c6-12, .c2-7,
-    .c7-12, .c2-8, .c8-12, .c2-9, .c9-12, .c2-12, .c4-9, .c4-7 {
+    .c7-12, .c2-8, .c8-12, .c2-9, .c9-12, .c2-12, .c4-9, .c4-7, .c4-8 {
         grid-column: 2/12;
     }
 
