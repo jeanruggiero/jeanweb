@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 
-# Create your views here.
+from .notebook import get_notebook_content
 
 
 def home(request):
@@ -38,6 +38,10 @@ def party_mode(request):
 
 def brc_website(request):
     return render(request, 'jean_site/portfolio/brc_website.html')
+
+
+def mission_compostable(request):
+    return render(request, 'jean_site/portfolio/mission_compostable.html')
 
 
 def contact(request):

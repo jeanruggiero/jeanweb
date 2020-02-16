@@ -545,6 +545,24 @@ div#meet-team p.caption {
     margin: auto;
 }
 
+.iframe-container {
+    overflow: hidden;
+    grid-column: 2/12;
+    display: inline-block;
+    height: 4400px;
+    position: relative;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
 /**********************CONTACT****************************/
 
 div#contact-text p {

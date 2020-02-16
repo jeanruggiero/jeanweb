@@ -12,5 +12,6 @@ urlpatterns = [
     path('portfolio/lighthouse', views.lighthouse, name='lighthouse'),
     path('portfolio/party_mode', views.party_mode, name="party_mode"),
     path('portfolio/brc_website', views.brc_website, name="brc_website"),
+    path('portfolio/mission_compostable', views.mission_compostable, name="mission_compostable"),
     path('contact', views.contact, name='contact'),
 ]

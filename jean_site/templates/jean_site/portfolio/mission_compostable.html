@@ -1,0 +1,52 @@
+{% extends "jean_site/portfolio/base_portfolio.html" %}
+{% block title %}Jean Ruggiero - Portfolio: Mission Compostable{% endblock %}
+{% block header_large %}mission: compostable{% endblock %}
+{% block header_small %}saving compostable spoons from the landfill since 2020{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div id="download-bar" class="c2-12">
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="http://www.missioncompostable.online/">
+
+            VIEW SITE
+
+            <i class="material-icons">launch</i>
+        </a>
+    </div>
+
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://github.com/jeanruggiero/mission-compostable">
+
+            VIEW CODE
+
+            <img src="{% static '/icons/github_logo_light.svg' %}" alt="GitHub Logo" />
+        </a>
+    </div>
+</div>
+
+<p>
+    Mission: Compostable started as a hackathon project during <a href="https://www.hackher413.com/">Hack(H)er413</a> this year. The goal of the
+    project is to help users differentiate between plastic and compostable utensils, cups, lids, etc. Many of these items look like plastic and
+    people are often unsure what bin they go in. Compostable utensils won't break down in a landfill; they need to be sent to an industrial
+    composting facility. Similarly, putting plastic in the compost bin is costly, and results in contaminated compost. The current form factor is
+    a web app for demo and testing purposes, but I hope to build an iPhone app next and maybe even a compost-sorting robot.
+</p>
+
+<h3>How it Works</h3>
+<p>
+    We wrote an algorithm to differentiate between plastic and compostable spoons given an image of the spoon. Plastic spoons usually have a
+    smooth, shiny finish from injection molding, while compostable spoons often have a matte finish. The algorithm detects how "shiny" the spoon is
+    from the image and classifies it as compost or trash based on the result. The image processing engine is explained in the Jupyter Notebook
+    below. This notebook and image file are also part of the git repository linked above so you can clone it and try it out for yourself!
+</p>
+<div class="iframe-container">
+    <iframe src="{% static 'notebook.html' %}"></iframe>
+</div>
+
+
+
+{% endblock content %}
