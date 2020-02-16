@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 
-from .notebook import get_notebook_content
-
 
 def home(request):
     return render(request, 'jean_site/home.html')
