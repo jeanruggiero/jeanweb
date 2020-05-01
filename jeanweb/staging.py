@@ -11,4 +11,8 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 
