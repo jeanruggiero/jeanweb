@@ -1,0 +1,155 @@
+{% extends "jean_site/portfolio/base_portfolio.html" %}
+{% block title %}Jean Ruggiero - Portfolio: Pandemic-Proofing Family-Owned Medical Practice{% endblock %}
+{% block header_large %}ocularize{% endblock %}
+{% block header_small %}pandemic-proof patient intake forms{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<h3>Online Intake Forms to Pandemic-Proof Family-Owned Medical Practice</h3>
+
+<p>At the start of the COVID-19 pandemic, I was looking for a way to help out in some way. My partner's father co-owns a small optometry practice
+    in San Jose, CA and was looking for a way to move the intake process (currently consisting of paper forms and in-person Q&A) online in order to
+    meet guidelines and enhance the safety of patients and staff. I offered to help out and ended up creating a solution that addressed these
+    issues and allowed the office to re-open without having to hire additional staff to process intake forms.
+</p>
+
+<p>I started by performing some research into existing online intake solutions. As part of my upfront research, I contacted the technical support
+    team for the office's electronic medical records (EMR) software and learned that the application does not provide a back-end API and thus there
+    would be no way to automate the process of moving information from an intake application into the EMR software. Further, the company does not
+    offer a solution for an online patient intake process.
+</p>
+
+<p>Next, I evaluated several online intake solutions on the market and collected price information for each. I presented the options to the
+    business owners and learned that cost was a major concern, as it is for many small businesses at this time. They were reluctant to spend money
+    on a solution that could not be integrated with their existing EMR software to provide a fully automated process. This led me to consider
+    building a custom web application. I estimated that I could build an MVP web application and host it on AWS for $5-10 per month, plus an upfront
+    cost of $15 for a domain name. Other benefits of a custom application include flexibility, which would allow for a better patient experience
+    and time savings for the staff. The Staff Portal could be customized so that the information layout matched the screens of the office's EMR
+    software program, which would allow staff members to more efficiently copy information over to the EMR system.
+</p>
+
+<p>The high cost of existing solutions along with the benefits of a custom application drove the decision to build Ocularize, a web application
+    consisting of three components that work together to provide the practice with an online patient intake process: a Patient Portal, Staff
+    Portal, and backend server. The application has been in use for three months and has cost less that $3 per month over that time. Ocularize
+    enabled the practice to re-open both of its offices, providing patients with access to medical care and allowing staff members to return to
+    work. During this challenging time, wins for small businesses are something we should all celebrate!
+</p>
+
+<h3>Patient Portal</h3>
+
+<div id="download-bar" class="c2-12">
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://www.ocularize.com/">
+
+            VIEW SITE
+
+            <i class="material-icons">launch</i>
+        </a>
+    </div>
+
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://github.com/jeanruggiero/og-patient-portal">
+
+            VIEW CODE
+
+            <img src="{% static '/icons/github_logo_light.svg' %}" alt="GitHub Logo" />
+        </a>
+    </div>
+</div>
+
+<p>The Ocularize Patient Portal can be accessed from the practice's home page. Patients can use the portal to submit intake forms, request
+    appointments, and find contact information for both of the practice's offices. The online intake forms were designed to capture the same
+    information as the paper forms previously used, but with usability enhancements including logical grouping of form fields, adaptive fields, and
+    improved labeling and instructions. The portal was developed with input from one of the owners, the office manager, and several staff members.
+    The Patient Portal is a serverless single page application built with React and hosted using AWS S3 and CloudFront CDN.
+</p>
+
+<h3>Staff Portal</h3>
+
+<div id="download-bar" class="c2-12">
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://github.com/jeanruggiero/og-staff">
+
+            VIEW CODE
+
+            <img src="{% static '/icons/github_logo_light.svg' %}" alt="GitHub Logo" />
+        </a>
+    </div>
+</div>
+
+<p>The Ocularize Staff Portal allows staff members to log in and view completed intake forms and appointment requests. Intake forms and appointment
+    requests are displayed on separate tabs in an inbox-style format with filtering options. Items can be filtered by office and by whether or not
+    they have been processed/scheduled. Staff members can mark forms as "Processed" once the information has been copied into the office's EMR
+    software. Similarly, appointment requests can be marked as "Scheduled." The layout of the information in the Staff Portal is designed to mirror
+    the forms on the office's EMR software screens, enabling efficient copying of information. The tech stack for the Staff Portal is the same as
+    that used for the Patient Portal: a serverless React app hosted using AWS S3 and CloudFront.
+</p>
+
+<h3>Backend Server</h3>
+
+<div id="download-bar" class="c2-12">
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://github.com/jeanruggiero/og-backend">
+
+            VIEW CODE
+
+            <img src="{% static '/icons/github_logo_light.svg' %}" alt="GitHub Logo" />
+        </a>
+    </div>
+</div>
+
+<p>The Ocularize backend server provides API endpoints for the Patient and Staff Portals and handles authentication for the Staff Portal. The
+    backend server, written in python/Django and hosted on AWS Elastic Beanstalk, provides an interface between the Portals and data stored in the
+    application's databases. Form information is stored in AWS DynamoDB. AWS RDS (Postgres) is used for storing user data and authentication
+    information.
+</p>
+
+<p>Because the majority of the fields on the practice's intake forms are optional or not applicable to many patients (for example, if you don't wear
+    contacts, you won't be asked 15 questions about your contact lenses), I decided to use a NoSQL database to house the form information. I chose
+    AWS DynamoDB, which provides functionality equivalent to that of MongoDB. DynamoDB offers built-in encryption at rest and an API that accepts the
+    same JSON strings included in HTTP PUT/POST requests from web forms within the Patient Portal. This eliminated the need for hundreds of lines
+    of boilerplate code to define a data model whose implementing objects would be sparse on average.
+</p>
+
+<h3>Key Learnings</h3>
+
+<p>Ocularize is the most sophisticated full-stack web application I've built and deployed to date. The key learnings from this project are outlined
+    below:
+</p>
+
+<ol>
+    <li>
+        I finally "got" React. I had built React applications before, but the data flow mechanics of React (especially related to function
+        components) finally clicked for me while working on this project. I learned how to use react-router and how to build forms in React (more
+        difficult than it seems!).
+    </li>
+    <li>
+        I gained experience developing a data model for a complex dataset. There are many ways to organize information into a database, but most
+        are not suitable for a production web application. I thoroughly evaluated the data I expected to be storing and segmented it into
+        transactional data (e.g. intake forms) and stateful data (e.g. a patient's name and date of birth). Keeping a transactional history of intake
+        forms would allow comparisons over time, which I learned is important to the doctors at the practice. On the other hand, patient
+        information may change (such as a name change after marriage), but the person associated with the database entry remains the same. I also
+    </li>
+    <li>
+        I learned more about file databases. I had previously completed a small class project using MongoDB, but otherwise did not have much
+        experience with this particular database technology. I understand the pros and cons of file databases and can better identify when to use one
+        and when not to.
+    </li>
+    <li>
+        I learned a ton about AWS and many of its service offerings, notably DynamoDB, RDS, S3, CloudFront, Elastic Beanstalk, ACM, and IAM. I had
+        attempted to deploy applications to AWS in the past, but had previously defaulted to Heroku due to its ease of use. In this case, the
+        security requirements drove me to choose AWS for data storage and application hosting.
+    </li>
+    <li>
+        I learned more about web security including SSL certificates, HTTPS, and data encryption. I already knew a little about CSRF and
+        CORS, but this project forced me to learn more about them in order to build front-end applications that communicate with a backend server
+        running on a different domain. I was able to go back and apply what I learned to enhance the security of other applications I've built.
+    </li>
+</ol>
+
+{% endblock content %}

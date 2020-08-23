@@ -42,5 +42,9 @@ def mission_compostable(request):
     return render(request, 'jean_site/portfolio/mission_compostable.html')
 
 
+def ocularize(request):
+    return render(request, 'jean_site/portfolio/ocularize.html')
+
+
 def contact(request):
     return render(request, 'jean_site/contact.html')
