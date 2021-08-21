@@ -8,16 +8,25 @@
 
 {% block content %}
     {% load static %}
+
+    <div id="download-bar" class="c2-12">
+        <a id="download-button" class="button" href=
+                "{% static 'jean_ruggiero_cv.pdf' %}"
+        download><img
+                src="{% static 'icons/download_icon.svg' %}" alt="Download
+                icon">DOWNLOAD</a>
+    </div>
+
     <h3>Education</h3>
 
     <h4 class="resume job-title">M.S. Computer Science</h4>
     <div class="resume-item">
         <h4 class="resume company">Northeastern University</h4>
-        <p class="resume">Network security, machine learning, operating systems, algorithms I & II, computer systems, object-oriented design,
+        <p class="resume">Distributed systems, cybersecurity, machine learning, operating systems, algorithms, computer systems,
+            object-oriented design,
             discrete math</p>
         <br>
-        <p><b>Thesis</b>: Applications of convolutional neural networks for object detection and classification in ground-penetrating radar images</p>
-
+        <p class="resume"><b>Thesis</b>: Evaluation of Synthetic Training Data and Training-Data-Augmentation Techniques for Object Detection in Ground-Penetrating Radar Data Using Deep-Learning Models</p>
         <p class="grad-date">2021</p>
         <p class="gpa">GPA: 4.0/4.0</p>
     </div>
@@ -41,14 +50,20 @@
 
     <h3>Professional Experience</h3>
 
-    <h4 class="resume job-title">Part-Time Data Scientist</h4>
+    <h4 class="resume job-title">Data Scientist</h4>
     <div class="resume-item">
         <h4 class="resume company">Fortive</h4>
-        <p class="resume">I'm currently working on a customer churn model for an organization that creates and sells SaaS solutions. On this
-            project, I led the creation of a python package and corresponding CI/CD pipeline for automated deployments to the team's internal
-            production PyPi repository. In addition, I'm assisting with the team's adoption of agile processes and tools, such as sprints, Jira,
-            test-driven development, and continuous deployment. I also contribute bug fixes, feature requests, and infrastructure updates to several
-            production machine learning applications.</p>
+        <p class="resume">I'm currently experimenting with a deep learning approach to demand demand forecasting. I'm building and training several
+            neural networks as part of this project, including a group of convolutional autoencoders used to perform nonlinear dimensionality
+            reduction of historical demand data. I'm also leading a customer churn prediction project with the goal of predicting contract
+            terminations and non-renewals for a hardware leasing business.
+        </p>
+        <br/>
+        <p class="resume">
+            I regularly contribute to our organization's internal data science toolkit. My contributions
+            include CI/CD utilities, a Python timeseries package, and an AWS EC2 deep learning experimentation package using Terraform. I also
+            contribute bug fixes, feature requests, and infrastructure updates to several production machine learning applications.
+        </p>
         <p class="location">Pittsburgh, PA</p>
         <p class="date">Sept 2020 &ndash; Present</p>
     </div>
@@ -56,8 +71,8 @@
     <h4 class="resume job-title">Data Science Intern</h4>
     <div class="resume-item">
         <h4 class="resume company">Fortive</h4>
-        <p class="resume">I spent this past summer as a data science intern at "The Fort," Fortive's AI & Data Analytics hub. I developed a machine
-            learning based revenue forecast for one of Fortive's operating companies using timeseries regression techniques. I automated
+        <p class="resume">I spent a summer as a data science intern at "The Fort," Fortive's AI & Data Analytics hub. I developed a machine
+            learning based revenue forecast for one of Fortive's operating companies using time series regression techniques. I automated
             the existing revenue forecasting process and achieved a 40% increase in prediction accuracy. I deployed the updated model to AWS and
             built an MVP dashboard to deliver value to the user. In addition, I organized and led a workshop on user experience design, lean
             prototyping, and usability testing.</p>
@@ -126,44 +141,45 @@
         <p class="skill-5">Python</p>
         <p class="skill-4">C</p>
         <p class="skill-2">C++</p>
-        <p class="skill-4">Java</p>
+        <p class="skill-5">Java</p>
         <p class="skill-4">JavaScript</p>
-        <p class="skill-2">Swift</p>
         <p class="skill-5">MATLAB</p>
 
         <h4 class="resume">Data Science</h4>
+        <p class="skill-4">Deep Learning</p>
+        <p class="skill-4">Machine Learning</p>
         <p class="skill-4">Time Series Forecasting</p>
         <p class="skill-4">pandas/numpy</p>
-        <p class="skill-3">scikit-learn</p>
-        <p class="skill-3">Deep Learning</p>
-        <p class="skill-4">Bayesian Models</p>
-        <p class="skill-4">Linear Models</p>
-        <p class="skill-4">Tree-Based Models</p>
+        <p class="skill-4">scikit-learn/tensorflow</p>
     </div>
 
     <div class="resume skill c6-9">
         <h4 class="resume">Software Development</h4>
-        <p class="skill-4">Linux</p>
-        <p class="skill-4">TDD</p>
+        <p class="skill-5">Linux/Unix</p>
         <p class="skill-4">CI/CD</p>
-        <p class="skill-4">Git</p>
+        <p class="skill-5">Git</p>
         <p class="skill-2">Docker</p>
-        <p class="skill-3">AWS</p>
+        <p class="skill-5">AWS</p>
+        <p class="skill-4">Terraform</p>
 
 
         <h4 class="resume">Web Development</h4>
-        <p class="skill-3">Django</p>
+        <p class="skill-4">Django</p>
         <p class="skill-4">React</p>
         <p class="skill-5">HTML/CSS</p>
         <p class="skill-4">SQL/NoSQL</p>
-        <p class="skill-2">InfluxDB</p>
         <p class="skill-4">Heroku</p>
-        <p class="skill-3">AWS EC2</p>
-        <p class="skill-3">AWS CloudFront</p>
 
     </div>
 
     <div class="resume skill c9-12">
+
+        <h4 class="resume">Electronics & Devices</h4>
+        <p class="skill-4">Prototyping</p>
+        <p class="skill-3">Wearables</p>
+        <p class="skill-3">CircuitPython</p>
+        <p class="skill-3">IoT/Smart Home</p>
+
         <h4 class="resume">Product & Design</h4>
         <p class="skill-4">Jira</p>
         <p class="skill-4">Sketch</p>
@@ -174,6 +190,26 @@
 
 
     <h3>Projects</h3>
+
+    <h4 class="resume job-title">MS Computer Science Thesis</h4>
+    <div class="resume-item">
+        <h4 class="resume company">Evaluation of Synthetic Training Data and Training-Data-Augmentation Techniques for Object Detection in Ground-Penetrating Radar Data Using Deep-Learning Models</h4>
+        <p class="resume">This work examines the current state of deep learning in the subsurface imaging field and expands upon it by
+            evaluating the real-world performance of a synthetically-trained neural network model for object detection in GPR images. Further,
+            three data augmentation techniques for GPR data are proposed and evaluated on a real-world test set: random cropping, negative
+            augmentation, and real noise application. <a href="{% static 'Jean_Ruggiero_MSCS_Thesis.pdf' %}" target="_blank" >Get a copy</a>.
+        </p>
+    </div>
+
+    <h4 class="resume job-title">WiFi Smart Switch PenTest</h4>
+    <div class="resume-item">
+        <h4 class="resume company">Cybersecurity class project to complete a security assessment of an IoT device</h4>
+        <p class="resume">For this class project, I completed a security assessment detailing potential attackers and their incentives as well
+            as types of attacks and their associated risks. I started by preforming open source intelligence gathering and network
+            traffic snooping to identify attack vectors. Next, I conducted four types of attack: supply chain attack, direct memory access, DoS,
+            and replay attack.
+        </p>
+    </div>
 
     <h4 class="resume job-title">Lighthouse</h4>
     <div class="resume-item">
@@ -245,7 +281,7 @@
 
     <div id="download-bar" class="c2-12">
         <a id="download-button" class="button" href=
-                "{% static 'jean_ruggiero_resume.pdf' %}"
+                "{% static 'jean_ruggiero_cv.pdf' %}"
         download><img
                 src="{% static 'icons/download_icon.svg' %}" alt="Download
                 icon">DOWNLOAD</a>

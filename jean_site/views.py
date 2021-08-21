@@ -46,5 +46,21 @@ def ocularize(request):
     return render(request, 'jean_site/portfolio/ocularize.html')
 
 
+def distributed_microblog(request):
+    return render(request, 'jean_site/portfolio/distributed_microblog.html')
+
+
+def pentest(request):
+    return render(request, 'jean_site/portfolio/pentest.html')
+
+
+def ocularize(request):
+    return render(request, 'jean_site/portfolio/ocularize.html')
+
+
+def ms_thesis(request):
+    return render(request, 'jean_site/portfolio/ms_thesis.html')
+
+
 def contact(request):
     return render(request, 'jean_site/contact.html')

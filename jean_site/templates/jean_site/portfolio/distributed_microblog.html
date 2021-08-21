@@ -1,0 +1,57 @@
+{% extends "jean_site/portfolio/base_portfolio.html" %}
+{% block title %}Jean Ruggiero - Portfolio: Designing and implementing a P2P microblogging application{% endblock %}
+{% block header_large %}p2p blogger{% endblock %}
+{% block header_small %}a distributed microblogging application{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div id="download-bar" class="c2-12">
+    <div class="button-div">
+        <a id="download-button" class="button"
+           href="https://github.com/jeanruggiero/distributed-microblog">
+
+            VIEW PROJECT
+
+            <img src="{% static '/icons/github_logo_light.svg' %}" alt="GitHub Logo" />
+        </a>
+    </div>
+</div>
+
+<h3>Design and Implementation of a Distributed Microblogging Application</h3>
+
+<div class="img c4-10">
+    <img class="c4-10" src="{% static "images/architecture_diagram.png" %}"
+     alt="P2P Blogger architecture diagram">
+</div>
+
+<p class="portfolio">As part of a Distributed Systems class project, <a href="https://github.com/Austin-Chow">@Austin-Chow</a>, <a
+        href="https://github
+.com/philliptvo">@philliptvo</a>, and I created a distributed, peer-to-peer (P2P) microblogging application with functionality similar to that of
+    Twitter. The application presents a command line interface which allows users to create blog posts, like posts, re-post posts, and view other
+    users' posts.
+</p>
+
+<div class="img c4-10">
+    <img class="c4-10" src="{% static "images/distributed_microblog_cli.png" %}"
+     alt="P2P Blogger command line interface">
+</div>
+
+<p class="portfolio">
+    Each user's data is saved to disk on their own device, giving users total control over their own data. When a user wishes to see another
+    user's posts, a request is sent directly to that user's peer application instance in order to retrieve the posts.
+    We implemented a User Directory microservice which allows peers to obtain the IP address and port of
+    other users's peer application instances. The User Directory microservice was implemented as a cluster of containerized Flask apps, each
+    containing a replica
+    of the user directory. The two-phase commit protocol and distributed transactions were used together to maintain consistency among the replicas
+    upon any PUT or POST requests.
+</p>
+
+<div class="img c4-10">
+    <img class="c4-10" src="{% static "images/distributed_microblog_2pc.png" %}"
+     alt="P2P Blogger user directory microservice completing a round of the two phase commit protocol">
+</div>
+
+
+
+{% endblock content %}

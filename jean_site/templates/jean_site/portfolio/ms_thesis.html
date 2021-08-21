@@ -1,0 +1,32 @@
+{% extends "jean_site/portfolio/base_portfolio.html" %}
+{% block title %}Jean Ruggiero - Portfolio: MSCS Thesis Project{% endblock %}
+{% block header_large %}MS CS thesis project{% endblock %}
+{% block header_small %}synthetic GPR data augmentation techniques for deep learning{% endblock %}
+
+{% block content %}
+{% load static %}
+
+
+
+<div id="download-bar" class="c2-12">
+    <a id="download-button" class="button" href=
+            "{% static 'Jean_Ruggiero_MSCS_Thesis.pdf' %}"
+    download><img
+            src="{% static 'icons/download_icon.svg' %}" alt="Download
+            icon">DOWNLOAD</a>
+</div>
+
+<h3>Abstract</h3>
+
+
+
+<p class="portfolio">
+Deep learning models have been successfully applied to the task of object detection in photographic images. This success has led to experimentation with deep learning object detection in other types of image data, including subsurface radar images captured by ground-penetrating radar (GPR) devices. The high cost of GPR devices and of labeling GPR datasets has led to the use of synthetic GPR data for model training and evaluation in many prior studies. This work examines the current state of deep learning in the subsurface imaging field and expands upon it by evaluating the real-world performance of a synthetically-trained neural network model for object detection in GPR images. Further, three data augmentation techniques for GPR data are proposed and evaluated on a real-world test set: (1) random cropping, (2) negative augmentation, and (3) real noise application.
+</p>
+
+<p class="portfolio">
+The results of these data augmentation experiments indicate that none of the data augmentation techniques evaluated leads to improved real-world performance of a synthetically-trained GPR object detection model. The control experiment in which no data augmentation techniques were applied yielded the best-performing model as evaluated on the real-world test set. Additional work is required to determine which, if any, data augmentation techniques will improve the real- world performance of synthetically-trained GPR deep learning models. Several techniques are proposed as topics for future research. The results also demonstrate that a model that performs well on a synthetic validation set does not necessarily perform well on a real-world dataset. Several experiments produced models with an f-1 score of 0.90 or greater when evaluated on the synthetic validation set. These same models produced f-1 scores of 0.50 or lower (worse than random guessing) when evaluated on the real-world test set. The results demonstrate by counterexample that it is not possible to generalize about the real-world performance of a synthetically-trained GPR deep learning model based on results obtained using a synthetic test or validation set.
+</p>
+
+
+{% endblock content %}

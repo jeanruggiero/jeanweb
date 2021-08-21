@@ -14,5 +14,8 @@ urlpatterns = [
     path('portfolio/brc_website', views.brc_website, name="brc_website"),
     path('portfolio/mission_compostable', views.mission_compostable, name="mission_compostable"),
     path('portfolio/ocularize', views.ocularize, name="ocularize"),
+    path('portfolio/ms_thesis', views.ms_thesis, name="ms_thesis"),
+    path('portfolio/smart_switch_pentest', views.pentest, name="pentest"),
+    path('portfolio/p2p_blogger', views.distributed_microblog, name="distributed_microblog"),
     path('contact', views.contact, name='contact'),
 ]
